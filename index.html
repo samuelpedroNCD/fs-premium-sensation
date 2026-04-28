@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Sensation — Criamos Experiências Extraordinárias</title>
+  <meta name="description" content="Premium Sensation — Gestão total de eventos de luxo, do conceito à execução. Casamentos, eventos corporativos e celebrações privadas em Portugal e Nova Iorque.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://premiumsensation.com/">
+  <link rel="alternate" hreflang="pt" href="https://premiumsensation.com/">
+  <link rel="alternate" hreflang="en" href="https://premiumsensation.com/">
+  <link rel="alternate" hreflang="fr" href="https://premiumsensation.com/">
+  <link rel="alternate" hreflang="es" href="https://premiumsensation.com/">
+  <link rel="alternate" hreflang="x-default" href="https://premiumsensation.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Premium Sensation — Criamos Experiências Extraordinárias">
+  <meta property="og:description" content="Gestão total de eventos de luxo, do conceito à execução.">
+  <meta property="og:image" content="https://premiumsensation.com/assets/img/og-home.jpg">
+  <meta property="og:url" content="https://premiumsensation.com/">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Premium Sensation — Criamos Experiências Extraordinárias">
+  <meta name="twitter:description" content="Gestão total de eventos de luxo, do conceito à execução.">
+  <meta name="twitter:image" content="https://premiumsensation.com/assets/img/og-home.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Premium Sensation",
+    "url": "https://premiumsensation.com",
+    "description": "Luxury event management — from concept to execution.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Sensation Group",
+      "url": "https://sensationgroup.com"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Homepage-specific styles -->
+  <style>
+    /* ── HERO ─────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+
+    #hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1800&q=90');
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.06);
+      transition: transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.4s ease;
+      opacity: 0;
+    }
+
+    #hero-bg.loaded {
+      transform: scale(1);
+      opacity: 0.62;
+    }
+
+    #hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(10, 10, 10, 0.18) 0%,
+        rgba(10, 10, 10, 0.52) 50%,
+        rgba(10, 10, 10, 0.82) 100%
+      );
+    }
+
+    /* thin gold rule at very bottom of hero */
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+      opacity: 0.4;
+      z-index: 3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 48px;
+      max-width: 860px;
+    }
+
+    .hero-geo {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.35);
+      margin-bottom: 48px;
+    }
+
+    .hero-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(32px, 4.8vw, 72px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 0.97;
+      letter-spacing: -0.03em;
+      margin-bottom: 36px;
+    }
+
+    .hero-accent-line {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0 auto 32px;
+    }
+
+    .hero-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(14px, 1.4vw, 17px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.75;
+      margin-bottom: 52px;
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-scroll-line {
+      width: 1px;
+      height: 52px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+      animation: scrollPulse 2.4s ease-in-out infinite;
+    }
+
+    .hero-scroll-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.25);
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(0.8); transform-origin: top; }
+      50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content { padding: 0 32px; }
+      .hero-title { letter-spacing: -0.02em; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content { padding: 0 24px; }
+      .hero-scroll { display: none; }
+    }
+
+    /* ── SHARED SECTION UTILITIES ────────────────────────── */
+    .ps-section {
+      padding: 128px 72px;
+    }
+
+    .ps-section--sm {
+      padding: 96px 72px;
+    }
+
+    .section-header--center {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .section-header--center .accent-line {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .section-eyebrow--light {
+      color: rgba(255,255,255,0.3);
+    }
+
+    .section-headline {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(24px, 2.8vw, 42px);
+      font-weight: 700;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: var(--black);
+    }
+
+    .section-headline--light {
+      color: var(--white);
+    }
+
+    @media (max-width: 1024px) {
+      .ps-section { padding: 96px 48px; }
+      .ps-section--sm { padding: 72px 48px; }
+    }
+
+    @media (max-width: 768px) {
+      .ps-section { padding: 80px 28px; }
+      .ps-section--sm { padding: 64px 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .ps-section { padding: 64px 20px; }
+      .ps-section--sm { padding: 56px 20px; }
+    }
+
+    /* ── EXPERIENCE SECTION ──────────────────────────────── */
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .experience-quote {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(22px, 2.6vw, 38px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--black);
+    }
+
+    .experience-body {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--gray-600);
+      margin-bottom: 28px;
+    }
+
+    .experience-body-2 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--gray-400);
+      line-height: 1.65;
+      border-left: 1px solid var(--accent);
+      padding-left: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 52px;
+      }
+    }
+
+    /* ── SERVICES — numbered rows ────────────────────────── */
+    .services-list {
+      margin-top: 72px;
+      border-top: 1px solid var(--gray-200);
+    }
+
+    .service-row {
+      display: grid;
+      grid-template-columns: 56px 1fr 2fr;
+      gap: 48px;
+      align-items: start;
+      padding: 40px 0;
+      border-bottom: 1px solid var(--gray-200);
+      transition: background 0.3s ease;
+    }
+
+    .service-row:hover {
+      background: transparent;
+    }
+
+    .service-row:hover .service-row-num {
+      color: var(--accent);
+    }
+
+    .service-row-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--gray-200);
+      padding-top: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .service-row-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.2;
+    }
+
+    .service-row-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 768px) {
+      .service-row {
+        grid-template-columns: 40px 1fr;
+        gap: 24px;
+      }
+      .service-row-desc {
+        grid-column: 2;
+        margin-top: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 32px 0;
+      }
+      .service-row-num { font-size: 10px; }
+      .service-row-desc { grid-column: 1; }
+    }
+
+    /* ── CLIENTS — open typographic grid ────────────────── */
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      margin-top: 72px;
+      border-top: 1px solid var(--gray-100);
+      border-left: 1px solid var(--gray-100);
+    }
+
+    .client-card {
+      padding: 56px 52px;
+      border-bottom: 1px solid var(--gray-100);
+      border-right: 1px solid var(--gray-100);
+      transition: background 0.4s ease;
+    }
+
+    .client-card:hover {
+      background: var(--off-white);
+    }
+
+    .client-card-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--gray-100);
+      line-height: 1;
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
+      transition: color 0.4s ease;
+    }
+
+    .client-card:hover .client-card-num {
+      color: var(--accent);
+    }
+
+    .client-card-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .client-card-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 768px) {
+      .clients-grid {
+        grid-template-columns: 1fr;
+      }
+      .client-card { padding: 44px 28px; }
+    }
+
+    /* ── PORTFOLIO SECTION ───────────────────────────────── */
+    .portfolio-grid-home {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+      margin-top: 64px;
+    }
+
+    .portfolio-grid-home article:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .portfolio-grid-home article:first-child .portfolio-editorial-img {
+      aspect-ratio: 16 / 7;
+    }
+
+    .portfolio-footer {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid-home {
+        grid-template-columns: 1fr;
+      }
+      .portfolio-grid-home article:first-child {
+        grid-column: auto;
+      }
+      .portfolio-grid-home article:first-child .portfolio-editorial-img {
+        aspect-ratio: 3 / 2;
+      }
+    }
+
+    /* ── PROCESS — clean horizontal steps ───────────────── */
+    .process-track {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 48px;
+      border-top: 1px solid var(--gray-200);
+    }
+
+    .process-step {
+      padding: 40px 32px 40px 32px;
+      border-right: 1px solid var(--gray-200);
+      position: relative;
+    }
+
+    .process-step:first-child {
+      padding-left: 0;
+    }
+
+    .process-step:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .process-step-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .process-step-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .process-step-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 1024px) {
+      .process-track {
+        grid-template-columns: 1fr 1fr;
+        border-top: none;
+      }
+      .process-step {
+        border-top: 1px solid var(--gray-200);
+        border-right: none;
+        padding: 36px 0 36px 0;
+      }
+      .process-step:nth-child(odd) {
+        padding-right: 32px;
+        border-right: 1px solid var(--gray-200);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .process-track {
+        grid-template-columns: 1fr;
+      }
+      .process-step {
+        border-right: none !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    /* ── DIFFERENTIALS — ruled list on dark ─────────────── */
+    .differentials-list {
+      margin-top: 72px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .differential-row {
+      display: grid;
+      grid-template-columns: 48px 1.2fr 2fr;
+      gap: 56px;
+      align-items: start;
+      padding: 44px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: border-color 0.3s;
+    }
+
+    .differential-row:hover {
+      border-bottom-color: rgba(255,255,255,0.14);
+    }
+
+    .differential-row:hover .diff-num {
+      color: var(--white);
+    }
+
+    .diff-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      padding-top: 4px;
+      transition: color 0.3s;
+    }
+
+    .diff-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .diff-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .differential-row {
+        grid-template-columns: 40px 1fr;
+        gap: 24px;
+      }
+      .diff-desc {
+        grid-column: 2;
+        margin-top: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .differential-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 36px 0;
+      }
+      .diff-desc { grid-column: 1; }
+    }
+
+    /* ── TESTIMONIALS — full-screen carousel ─────────────── */
+    .testimonials-section {
+      background: var(--black);
+      padding: 128px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials-section::before {
+      content: '\201C';
+      position: absolute;
+      top: 60px;
+      left: 64px;
+      font-family: 'Syne', sans-serif;
+      font-size: 240px;
+      font-weight: 800;
+      color: rgba(201,169,110,0.06);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .testimonials-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .testimonials-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 72px;
+    }
+
+    .testimonials-nav {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .testimonials-btn {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: none;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .testimonials-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .testimonials-track {
+      position: relative;
+      min-height: 260px;
+    }
+
+    .testimonial-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      pointer-events: none;
+    }
+
+    .testimonial-slide.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      position: relative;
+    }
+
+    .testimonial-quote {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(20px, 2.4vw, 28px);
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--white);
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .testimonial-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .testimonial-author {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+    }
+
+    .testimonial-company {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.35);
+      margin-top: 3px;
+      letter-spacing: 0.04em;
+    }
+
+    .testimonials-dots {
+      display: flex;
+      gap: 10px;
+      margin-top: 52px;
+    }
+
+    .testimonials-dot {
+      width: 20px;
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: background 0.3s, width 0.3s;
+      border: none;
+      padding: 0;
+    }
+
+    .testimonials-dot.active {
+      background: var(--accent);
+      width: 36px;
+    }
+
+    .testimonials-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background: var(--accent);
+      opacity: 0.3;
+      transition: width 0.1s linear;
+    }
+
+    @media (max-width: 1024px) {
+      .testimonials-section { padding: 96px 48px; }
+      .testimonials-section::before { font-size: 160px; top: 48px; left: 40px; }
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-section { padding: 80px 28px; }
+      .testimonials-header { flex-direction: column; align-items: flex-start; gap: 32px; margin-bottom: 48px; }
+      .testimonials-section::before { display: none; }
+      .testimonials-track { min-height: 320px; }
+    }
+
+    @media (max-width: 480px) {
+      .testimonials-section { padding: 64px 20px; }
+    }
+
+    /* ── FINAL CTA ───────────────────────────────────────── */
+    .final-cta {
+      background: var(--off-white);
+      padding: 140px 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+      opacity: 0.35;
+    }
+
+    .final-cta-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    .final-cta-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(24px, 3vw, 44px);
+      font-weight: 800;
+      color: var(--black);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      margin-bottom: 28px;
+    }
+
+    .final-cta-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--gray-600);
+      margin-bottom: 52px;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 1024px) {
+      .final-cta { padding: 112px 48px; }
+    }
+
+    @media (max-width: 768px) {
+      .final-cta { padding: 88px 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .final-cta { padding: 72px 20px; }
+    }
+
+    /* ── CUSTOM CURSOR ──────────────────────────────────────── */
+    @media (hover: hover) and (pointer: fine) {
+      *, *::before, *::after { cursor: none !important; }
+
+      #cursor-ring {
+        position: fixed;
+        top: 0; left: 0;
+        width: 38px; height: 38px;
+        border: 1px solid rgba(201, 169, 110, 0.5);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+        will-change: left, top;
+      }
+
+      #cursor-dot {
+        position: fixed;
+        top: 0; left: 0;
+        width: 4px; height: 4px;
+        background: var(--accent);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        will-change: left, top;
+      }
+
+      #cursor-ring.hovering {
+        width: 58px;
+        height: 58px;
+        border-color: var(--accent);
+        opacity: 0.85;
+      }
+
+      #cursor-ring.hidden,
+      #cursor-dot.hidden { opacity: 0; }
+    }
+
+    /* ── HERO WORD REVEAL ───────────────────────────────────── */
+    .hero-title .word-wrap {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: bottom;
+      line-height: 1.02;
+    }
+
+    .hero-title .word {
+      display: inline-block;
+      transform: translateY(110%);
+      opacity: 0;
+      transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+    }
+
+    .hero-title.words-in .word {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-geo {
+        opacity: 0;
+        animation: heroFadeUp 0.8s ease 0.15s forwards;
+      }
+      .hero-accent-line {
+        opacity: 0;
+        animation: heroFadeUp 0.6s ease 1.25s forwards;
+      }
+      .hero-subtitle {
+        opacity: 0;
+        animation: heroFadeUp 0.9s ease 1.45s forwards;
+      }
+      .hero-content .btn {
+        opacity: 0;
+        animation: heroFadeUp 0.8s ease 1.75s forwards;
+      }
+      .hero-scroll {
+        opacity: 0;
+        animation: heroFadeUp 0.8s ease 2.1s forwards;
+      }
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── HERO GRAIN TEXTURE ─────────────────────────────────── */
+    #hero-grain {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    /* ── SERVICE ROW GOLD LINE HOVER ────────────────────────── */
+    .service-row { position: relative; }
+
+    .service-row::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .service-row:hover::after { transform: scaleX(1); }
+
+    /* ── PORTFOLIO LABEL SLIDE-UP OVERRIDE ──────────────────── */
+    .portfolio-editorial-label {
+      transform: translateY(14px);
+      opacity: 0;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    }
+
+    .portfolio-editorial:hover .portfolio-editorial-label {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ── TESTIMONIALS PROGRESS BAR ──────────────────────────── */
+    #testimonials-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background: var(--accent);
+      opacity: 0.45;
+      width: 0%;
+      z-index: 4;
+    }
+
+    #testimonials-progress.running {
+      width: 100%;
+      transition: width 6s linear;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Principal">
+  <div class="nav-inner">
+    <!-- Logo: replace [PS-LOGO-FILE] with actual logo filename when available -->
+    <a href="index.html" class="nav-logo" aria-label="Premium Sensation — Página inicial">
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img" style="height:32px;width:auto;">
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="experiencia.html" data-i18n="nav.experience">A Experiência</a></li>
+      <li><a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a></li>
+      <li><a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="parceiros.html" data-i18n="nav.partners">Parceiros</a></li>
+      <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+    </ul>
+
+    <div class="lang-switcher" aria-label="Selecionar idioma">
+      <button data-lang-btn="pt" class="active">PT</button>
+      <button data-lang-btn="en">EN</button>
+      <button data-lang-btn="fr">FR</button>
+      <button data-lang-btn="es">ES</button>
+    </div>
+
+    <a href="contacto.html" class="nav-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MOBILE MENU
+============================================================ -->
+<div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <a href="experiencia.html" data-i18n="nav.experience">A Experiência</a>
+  <a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a>
+  <a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a>
+  <a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a>
+  <a href="parceiros.html" data-i18n="nav.partners">Parceiros</a>
+  <a href="sobre.html" data-i18n="nav.about">Sobre</a>
+  <a href="contacto.html" class="mobile-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+  <div class="lang-switcher" aria-label="Selecionar idioma">
+    <button data-lang-btn="pt" class="active">PT</button>
+    <button data-lang-btn="en">EN</button>
+    <button data-lang-btn="fr">FR</button>
+    <button data-lang-btn="es">ES</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero" aria-label="Hero">
+  <div id="hero-bg" role="img" aria-label="Evento de luxo em produção"></div>
+  <div id="hero-overlay"></div>
+  <div id="hero-grain" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-geo">PT · EUA</p>
+    <h1 class="hero-title" data-i18n="hero.headline">Criamos Experiências Extraordinárias.</h1>
+    <div class="hero-accent-line"></div>
+    <p class="hero-subtitle" data-i18n="hero.subheadline">Organização e produção de eventos premium, do conceito à execução.</p>
+    <a href="contacto.html" class="btn btn--outline-white" data-i18n="hero.cta">Solicitar Proposta Privada</a>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     A EXPERIÊNCIA PREMIUM
+============================================================ -->
+<section class="section-wrap--white ps-section">
+  <div class="experience-grid">
+    <div class="reveal">
+      <div class="accent-line"></div>
+      <span class="section-eyebrow" data-i18n="experience.label">A Experiência Premium</span>
+      <h2 class="experience-quote" data-i18n="experience.title">Não são apenas eventos. São experiências que ficam.</h2>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <p class="experience-body" data-i18n="experience.body">A Premium Sensation é o parceiro que os clientes mais exigentes escolhem quando querem que alguém pense em tudo. Desde o conceito inicial até ao último detalhe da execução, gerimos cada elemento com obsessão pela perfeição — para que nunca tenha de se preocupar com nada.</p>
+      <p class="experience-body-2" data-i18n="experience.body2">Um único ponto de contacto. Confidencialidade total. Resultados que superam sempre as expectativas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     O QUE INCLUI — 6 SERVICES
+============================================================ -->
+<section class="section-wrap--off ps-section">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow" data-i18n="services.label">O Que Inclui</span>
+    <h2 class="section-headline" data-i18n="services.title">Gestão integral, do conceito à execução.</h2>
+  </div>
+
+  <div class="services-list">
+    <div class="service-row reveal">
+      <span class="service-row-num">01</span>
+      <h3 class="service-row-name" data-i18n="services.s1.name">Conceito Criativo</h3>
+      <p class="service-row-desc" data-i18n="services.s1.desc">Desenvolvemos a narrativa e o conceito criativo do seu evento, do zero, em torno da sua visão.</p>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row-num">02</span>
+      <h3 class="service-row-name" data-i18n="services.s2.name">Produção Completa</h3>
+      <p class="service-row-desc" data-i18n="services.s2.desc">Gerimos toda a produção: espaço, cenografia, técnica, catering e entretenimento.</p>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row-num">03</span>
+      <h3 class="service-row-name" data-i18n="services.s3.name">Coordenação de Fornecedores</h3>
+      <p class="service-row-desc" data-i18n="services.s3.desc">Acesso à nossa rede exclusiva de parceiros premium, cuidadosamente selecionados ao longo dos anos.</p>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row-num">04</span>
+      <h3 class="service-row-name" data-i18n="services.s4.name">Gestão Logística</h3>
+      <p class="service-row-desc" data-i18n="services.s4.desc">Coordenação end-to-end de todos os aspectos logísticos, com um único ponto de contacto.</p>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row-num">05</span>
+      <h3 class="service-row-name" data-i18n="services.s5.name">Experiências Internacionais</h3>
+      <p class="service-row-desc" data-i18n="services.s5.desc">Produção de eventos em Portugal, Nova Iorque e além. O mundo é o nosso palco.</p>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row-num">06</span>
+      <h3 class="service-row-name" data-i18n="services.s6.name">Curadoria Exclusiva</h3>
+      <p class="service-row-desc" data-i18n="services.s6.desc">Cada fornecedor, cada espaço, cada detalhe é curado para corresponder ao mais alto nível de exigência.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUEM NOS PROCURA — 4 CLIENT TYPES
+============================================================ -->
+<section class="section-wrap--white ps-section">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow" data-i18n="clients.label">Quem Nos Procura</span>
+    <h2 class="section-headline" data-i18n="clients.title">Clientes que exigem o extraordinário.</h2>
+  </div>
+
+  <div class="clients-grid">
+    <article class="client-card reveal">
+      <p class="client-card-num">01</p>
+      <h3 class="client-card-name" data-i18n="clients.c1.name">Casais Exigentes</h3>
+      <p class="client-card-desc" data-i18n="clients.c1.desc">Casamentos de destino e celebrações de luxo onde cada momento é perfeito e cada detalhe é intencional.</p>
+    </article>
+    <article class="client-card reveal reveal-delay-1">
+      <p class="client-card-num">02</p>
+      <h3 class="client-card-name" data-i18n="clients.c2.name">Empresas de Luxo</h3>
+      <p class="client-card-desc" data-i18n="clients.c2.desc">Lançamentos de marca, galas privadas e jantares executivos que comunicam excelência.</p>
+    </article>
+    <article class="client-card reveal">
+      <p class="client-card-num">03</p>
+      <h3 class="client-card-name" data-i18n="clients.c3.name">Marcas Premium</h3>
+      <p class="client-card-desc" data-i18n="clients.c3.desc">Ativações exclusivas e lançamentos de produto que deixam uma impressão duradoura.</p>
+    </article>
+    <article class="client-card reveal reveal-delay-1">
+      <p class="client-card-num">04</p>
+      <h3 class="client-card-name" data-i18n="clients.c4.name">Clientes Internacionais</h3>
+      <p class="client-card-desc" data-i18n="clients.c4.desc">Eventos transfronteiriços e experiências de destino em Portugal e Nova Iorque.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     EVENTOS SELECIONADOS — PORTFOLIO PREVIEWS
+============================================================ -->
+<section class="section-wrap--dark ps-section">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow section-eyebrow--light" data-i18n="portfolio.label">Eventos Selecionados</span>
+    <h2 class="section-headline section-headline--light" data-i18n="portfolio.title">Um portfólio de experiências extraordinárias.</h2>
+  </div>
+
+  <div class="portfolio-grid-home">
+    <article class="reveal">
+      <a href="portfolio-item.html?id=gala-anual-lisboa" class="portfolio-editorial">
+        <img
+          src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1800&q=90"
+          alt="Gala Anual — Lisboa"
+          class="portfolio-editorial-img"
+          loading="lazy"
+        >
+        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-label">
+          <p class="portfolio-editorial-cat">Corporativo</p>
+          <h3 class="portfolio-editorial-title">Gala Anual — Lisboa</h3>
+        </div>
+      </a>
+    </article>
+    <article class="reveal reveal-delay-1">
+      <a href="portfolio-item.html?id=casamento-sintra" class="portfolio-editorial">
+        <img
+          src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=90"
+          alt="Casamento — Sintra"
+          class="portfolio-editorial-img"
+          loading="lazy"
+        >
+        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-label">
+          <p class="portfolio-editorial-cat">Casamento</p>
+          <h3 class="portfolio-editorial-title">Casamento — Sintra</h3>
+        </div>
+      </a>
+    </article>
+    <article class="reveal reveal-delay-2">
+      <a href="portfolio-item.html?id=celebracao-privada-porto" class="portfolio-editorial">
+        <img
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90"
+          alt="Celebração Exclusiva — Porto"
+          class="portfolio-editorial-img"
+          loading="lazy"
+        >
+        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-label">
+          <p class="portfolio-editorial-cat">Evento Privado</p>
+          <h3 class="portfolio-editorial-title">Celebração Exclusiva — Porto</h3>
+        </div>
+      </a>
+    </article>
+  </div>
+
+  <div class="portfolio-footer reveal">
+    <a href="portfolio.html" class="text-link text-link--white" data-i18n="portfolio.link">Ver Portfólio Completo →</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     O NOSSO PROCESSO — 5 STEPS
+============================================================ -->
+<section class="section-wrap--off ps-section--sm">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow" data-i18n="process.label">Como Trabalhamos</span>
+    <h2 class="section-headline" data-i18n="process.title">O Nosso Processo</h2>
+  </div>
+
+  <div class="process-track">
+    <div class="process-step reveal">
+      <span class="process-step-num">01</span>
+      <p class="process-step-name" data-i18n="process.p1.name">Discovery</p>
+      <p class="process-step-desc" data-i18n="process.p1.desc">Compreendemos a sua visão, os seus convidados e o impacto que pretende criar.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-1">
+      <span class="process-step-num">02</span>
+      <p class="process-step-name" data-i18n="process.p2.name">Concept Design</p>
+      <p class="process-step-desc" data-i18n="process.p2.desc">Desenvolvemos o conceito criativo e a narrativa única do seu evento.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-2">
+      <span class="process-step-num">03</span>
+      <p class="process-step-name" data-i18n="process.p3.name">Production Planning</p>
+      <p class="process-step-desc" data-i18n="process.p3.desc">Coordenamos todos os fornecedores, espaços e logística com precisão.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-3">
+      <span class="process-step-num">04</span>
+      <p class="process-step-name" data-i18n="process.p4.name">Execution</p>
+      <p class="process-step-desc" data-i18n="process.p4.desc">Gerimos o dia com total controlo, para que esteja totalmente presente.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-4">
+      <span class="process-step-num">05</span>
+      <p class="process-step-name" data-i18n="process.p5.name">Experience Delivery</p>
+      <p class="process-step-desc" data-i18n="process.p5.desc">O resultado é uma experiência que fica na memória de todos os presentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DIFERENCIAIS
+============================================================ -->
+<section class="section-wrap--dark ps-section">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow section-eyebrow--light" data-i18n="differentials.label">Diferenciais</span>
+    <h2 class="section-headline section-headline--light" data-i18n="differentials.title">O que nos distingue.</h2>
+  </div>
+
+  <div class="differentials-list">
+    <div class="differential-row reveal">
+      <span class="diff-num">01</span>
+      <h3 class="diff-name" data-i18n="differentials.d1.name">Rede Exclusiva</h3>
+      <p class="diff-desc" data-i18n="differentials.d1.desc">Acesso a uma rede privilegiada de parceiros premium que não está disponível ao mercado geral.</p>
+    </div>
+    <div class="differential-row reveal">
+      <span class="diff-num">02</span>
+      <h3 class="diff-name" data-i18n="differentials.d2.name">Gestão Integral</h3>
+      <p class="diff-desc" data-i18n="differentials.d2.desc">Um único ponto de contacto. Zero preocupações. Máxima entrega em cada projeto.</p>
+    </div>
+    <div class="differential-row reveal">
+      <span class="diff-num">03</span>
+      <h3 class="diff-name" data-i18n="differentials.d3.name">Atenção ao Detalhe</h3>
+      <p class="diff-desc" data-i18n="differentials.d3.desc">A obsessão pelo detalhe é o nosso padrão mínimo — não um objetivo a alcançar.</p>
+    </div>
+    <div class="differential-row reveal">
+      <span class="diff-num">04</span>
+      <h3 class="diff-name" data-i18n="differentials.d4.name">Confidencialidade Total</h3>
+      <p class="diff-desc" data-i18n="differentials.d4.desc">A sua privacidade é uma característica do nosso serviço, não uma formalidade.</p>
+    </div>
+    <div class="differential-row reveal">
+      <span class="diff-num">05</span>
+      <h3 class="diff-name" data-i18n="differentials.d5.name">Presença Internacional</h3>
+      <p class="diff-desc" data-i18n="differentials.d5.desc">Operações ativas em Portugal e Nova Iorque. Experiência transfronteiriça real.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTEMUNHOS — interactive carousel
+============================================================ -->
+<section class="testimonials-section" aria-label="Testemunhos" id="testimonials">
+  <div id="testimonials-progress" aria-hidden="true"></div>
+  <div class="testimonials-inner">
+    <div class="testimonials-header reveal">
+      <div>
+        <div class="accent-line"></div>
+        <span class="section-eyebrow section-eyebrow--light" data-i18n="testimonials.label">Testemunhos</span>
+        <h2 class="section-headline section-headline--light" data-i18n="testimonials.title">O que dizem os nossos clientes.</h2>
+      </div>
+      <div class="testimonials-nav" aria-label="Navegar testemunhos">
+        <button class="testimonials-btn" id="t-prev" aria-label="Testemunho anterior">←</button>
+        <button class="testimonials-btn" id="t-next" aria-label="Próximo testemunho">→</button>
+      </div>
+    </div>
+
+    <div class="testimonials-track" id="testimonials-track">
+      <blockquote class="testimonial-slide active" data-index="0">
+        <p class="testimonial-quote" data-i18n="testimonials.t1.quote">"A Premium Sensation transformou o nosso casamento em algo que nunca imaginávamos possível. Cada detalhe foi perfeito, cada momento foi mágico."</p>
+        <div class="testimonial-footer">
+          <div class="testimonial-rule"></div>
+          <div>
+            <p class="testimonial-author" data-i18n="testimonials.t1.author">Maria & João</p>
+            <p class="testimonial-company" data-i18n="testimonials.t1.company">Casamento, Sintra 2024</p>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testimonial-slide" data-index="1">
+        <p class="testimonial-quote" data-i18n="testimonials.t2.quote">"Organização irrepreensível. A nossa gala anual nunca tinha corrido tão bem. A equipa antecipou cada necessidade antes de nós sequer a termos expressado."</p>
+        <div class="testimonial-footer">
+          <div class="testimonial-rule"></div>
+          <div>
+            <p class="testimonial-author" data-i18n="testimonials.t2.author">Ana Rodrigues</p>
+            <p class="testimonial-company" data-i18n="testimonials.t2.company">CEO, Empresa Multinacional</p>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testimonial-slide" data-index="2">
+        <p class="testimonial-quote" data-i18n="testimonials.t3.quote">"Entregaram uma experiência que superou completamente as expectativas dos nossos convidados. Voltaremos a trabalhar juntos, sem dúvida."</p>
+        <div class="testimonial-footer">
+          <div class="testimonial-rule"></div>
+          <div>
+            <p class="testimonial-author" data-i18n="testimonials.t3.author">Carlos Mendes</p>
+            <p class="testimonial-company" data-i18n="testimonials.t3.company">Director, Global Leaders Forum</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <div class="testimonials-dots" role="tablist" aria-label="Selecionar testemunho">
+      <button class="testimonials-dot active" data-dot="0" role="tab" aria-selected="true" aria-label="Testemunho 1"></button>
+      <button class="testimonials-dot" data-dot="1" role="tab" aria-selected="false" aria-label="Testemunho 2"></button>
+      <button class="testimonials-dot" data-dot="2" role="tab" aria-selected="false" aria-label="Testemunho 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="final-cta">
+  <div class="reveal">
+    <span class="final-cta-eyebrow">Premium Sensation</span>
+    <h2 class="final-cta-title" data-i18n="cta.headline">Vamos Criar Algo Extraordinário.</h2>
+    <p class="final-cta-subtitle" data-i18n="cta.subheadline">Conte-nos a sua visão. Nós tratamos de todo o resto.</p>
+    <a href="contacto.html" class="btn btn--dark" data-i18n="cta.btn">Solicitar Proposta Privada</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-top">
+    <div>
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img footer-logo" style="height:28px;width:auto;margin-bottom:16px;display:block;">
+      <p class="footer-tagline" data-i18n="footer.tagline">Gestão total de eventos premium, do conceito à execução.</p>
+      <p class="footer-locations">PT · EUA</p>
+    </div>
+    <nav class="footer-col" aria-label="Serviços">
+      <p class="footer-col-title" data-i18n="footer.services">Serviços</p>
+      <ul>
+        <li><a href="experiencia.html" data-i18n="nav.experience">A Experiência</a></li>
+        <li><a href="casamentos.html" data-i18n="nav.weddings">Casamentos Premium</a></li>
+        <li><a href="eventos-corporativos.html" data-i18n="nav.events">Eventos Corporativos</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Empresa">
+      <p class="footer-col-title" data-i18n="footer.company">Empresa</p>
+      <ul>
+        <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="parceiros.html" data-i18n="nav.partners">Parceiros</a></li>
+        <li><a href="contacto.html">Contacto Privado</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <p class="footer-col-title" data-i18n="footer.contact">Contacto</p>
+      <ul>
+        <li><a href="mailto:hello@premiumsensation.com">hello@premiumsensation.com</a></li>
+        <li><a href="#">Lisboa, Portugal</a></li>
+        <li><a href="#">New York, USA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">Premium Sensation is part of <a href="https://sensationgroup.com" target="_blank" rel="noopener">Sensation Group</a> &middot; Built by <a href="https://nocodedistrict.com" target="_blank" rel="noopener">No-Code District</a> &middot; Copyright &copy; 2026 Premium Sensation. All Rights Reserved.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacidade.html" data-i18n="footer.privacy">Privacidade</a>
+      <a href="termos.html" data-i18n="footer.terms">Termos</a>
+      <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+    </nav>
+    <nav class="footer-socials" aria-label="Redes Sociais">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/content.js"></script>
+
+<script>
+(function () {
+
+  /* ── CUSTOM CURSOR ─────────────────────────────────── */
+  var ring = document.getElementById('cursor-ring');
+  var dot  = document.getElementById('cursor-dot');
+  if (ring && dot && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var rx = 0, ry = 0, mx = 0, my = 0, cursorStarted = false;
+
+    document.addEventListener('mousemove', function (e) {
+      mx = e.clientX;
+      my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top  = my + 'px';
+      if (!cursorStarted) {
+        cursorStarted = true;
+        ring.classList.remove('hidden');
+        dot.classList.remove('hidden');
+        loop();
+      }
+    });
+
+    document.addEventListener('mouseleave', function () {
+      ring.classList.add('hidden');
+      dot.classList.add('hidden');
+    });
+
+    document.addEventListener('mouseenter', function () {
+      ring.classList.remove('hidden');
+      dot.classList.remove('hidden');
+    });
+
+    function loop() {
+      rx += (mx - rx) * 0.11;
+      ry += (my - ry) * 0.11;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(loop);
+    }
+
+    document.querySelectorAll('a, button, [role="button"]').forEach(function (el) {
+      el.addEventListener('mouseenter', function () { ring.classList.add('hovering'); });
+      el.addEventListener('mouseleave', function () { ring.classList.remove('hovering'); });
+    });
+
+    ring.classList.add('hidden');
+    dot.classList.add('hidden');
+  }
+
+  /* ── HERO WORD REVEAL ──────────────────────────────── */
+  var heroTitle = document.querySelector('.hero-title');
+  if (heroTitle && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    var words = heroTitle.textContent.trim().split(/\s+/);
+    heroTitle.innerHTML = words.map(function (w, i) {
+      return '<span class="word-wrap"><span class="word" style="transition-delay:' + (0.55 + i * 0.13) + 's">' + w + '</span></span>';
+    }).join(' ');
+    setTimeout(function () { heroTitle.classList.add('words-in'); }, 120);
+  }
+
+  /* ── HERO PARALLAX ─────────────────────────────────── */
+  var heroBg = document.getElementById('hero-bg');
+  if (heroBg) {
+    setTimeout(function () {
+      window.addEventListener('scroll', function () {
+        var s = window.scrollY;
+        if (s < window.innerHeight * 1.4) {
+          heroBg.style.transform = 'scale(1) translateY(' + (s * 0.22) + 'px)';
+        }
+      }, { passive: true });
+    }, 1800);
+  }
+
+  /* ── TESTIMONIALS CAROUSEL + PROGRESS BAR ──────────── */
+  var slides   = Array.from(document.querySelectorAll('.testimonial-slide'));
+  var dots     = Array.from(document.querySelectorAll('.testimonials-dot'));
+  var tSection = document.querySelector('.testimonials-section');
+  var progress = document.getElementById('testimonials-progress');
+  var current  = 0;
+  var autoTimer;
+
+  function resetProgress() {
+    if (!progress) return;
+    progress.classList.remove('running');
+    void progress.offsetWidth; /* reflow to restart transition */
+    progress.classList.add('running');
+  }
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    dots[current].setAttribute('aria-selected', 'false');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    dots[current].setAttribute('aria-selected', 'true');
+    resetProgress();
+  }
+
+  function startAuto() {
+    autoTimer = setInterval(function () { goTo(current + 1); }, 6000);
+    resetProgress();
+  }
+
+  function stopAuto() {
+    clearInterval(autoTimer);
+    if (progress) { progress.classList.remove('running'); }
+  }
+
+  document.getElementById('t-prev').addEventListener('click', function () {
+    stopAuto(); goTo(current - 1); startAuto();
+  });
+
+  document.getElementById('t-next').addEventListener('click', function () {
+    stopAuto(); goTo(current + 1); startAuto();
+  });
+
+  dots.forEach(function (d) {
+    d.addEventListener('click', function () {
+      stopAuto(); goTo(parseInt(d.dataset.dot, 10)); startAuto();
+    });
+  });
+
+  if (tSection) {
+    tSection.addEventListener('mouseenter', stopAuto);
+    tSection.addEventListener('mouseleave', startAuto);
+  }
+
+  startAuto();
+
+}());
+</script>
+</body>
+</html>

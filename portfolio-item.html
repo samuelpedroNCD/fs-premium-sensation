@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio — Premium Sensation</title>
+  <meta name="description" content="Experiência exclusiva produzida pela Premium Sensation.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://premiumsensation.com/portfolio-item.html">
+  <link rel="alternate" hreflang="pt" href="https://premiumsensation.com/portfolio-item.html">
+  <link rel="alternate" hreflang="en" href="https://premiumsensation.com/portfolio-item.html">
+  <link rel="alternate" hreflang="fr" href="https://premiumsensation.com/portfolio-item.html">
+  <link rel="alternate" hreflang="es" href="https://premiumsensation.com/portfolio-item.html">
+  <link rel="alternate" hreflang="x-default" href="https://premiumsensation.com/portfolio-item.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfólio — Premium Sensation">
+  <meta property="og:description" content="Experiência exclusiva produzida pela Premium Sensation.">
+  <meta property="og:image" content="https://premiumsensation.com/assets/img/og-portfolio.jpg">
+  <meta property="og:url" content="https://premiumsensation.com/portfolio-item.html">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfólio — Premium Sensation">
+  <meta name="twitter:description" content="Experiência exclusiva produzida pela Premium Sensation.">
+  <meta name="twitter:image" content="https://premiumsensation.com/assets/img/og-portfolio.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Premium Sensation",
+    "url": "https://premiumsensation.com",
+    "description": "Luxury event management — from concept to execution.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Sensation Group",
+      "url": "https://sensationgroup.com"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <style>
+    /* ── SHARED SECTION UTILITIES ────────────────────────────── */
+    .ps-section {
+      padding: 128px 72px;
+    }
+
+    .ps-section--sm {
+      padding: 96px 72px;
+    }
+
+    .section-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .section-headline {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(34px, 4.2vw, 58px);
+      font-weight: 700;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: var(--black);
+    }
+
+    .section-headline--light {
+      color: var(--white);
+    }
+
+    @media (max-width: 1024px) {
+      .ps-section { padding: 96px 48px; }
+      .ps-section--sm { padding: 72px 48px; }
+    }
+
+    @media (max-width: 768px) {
+      .ps-section { padding: 80px 28px; }
+      .ps-section--sm { padding: 64px 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .ps-section { padding: 64px 20px; }
+      .ps-section--sm { padding: 56px 20px; }
+    }
+
+    /* ── ITEM HERO ────────────────────────────────────────────── */
+    #item-hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--black);
+    }
+
+    #item-hero-img {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.65;
+      transform: scale(1.04);
+      transition: transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.2s ease;
+    }
+
+    #item-hero-img.loaded {
+      transform: scale(1);
+    }
+
+    #item-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(10, 10, 10, 0.90) 0%,
+        rgba(10, 10, 10, 0.35) 50%,
+        rgba(10, 10, 10, 0.1) 100%
+      );
+    }
+
+    /* thin gold rule at very bottom of hero */
+    #item-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+      opacity: 0.4;
+      z-index: 3;
+    }
+
+    .item-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 72px 80px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .item-hero-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 48px;
+      transition: color 0.2s, gap 0.2s;
+    }
+
+    .item-hero-back:hover {
+      color: rgba(255, 255, 255, 0.75);
+      gap: 14px;
+    }
+
+    .item-hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .item-hero-cat {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .item-hero-date {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.3);
+      letter-spacing: 0.08em;
+    }
+
+    .item-hero-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(36px, 5.5vw, 80px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 0.97;
+      letter-spacing: -0.03em;
+    }
+
+    @media (max-width: 1024px) {
+      .item-hero-content { padding: 0 48px 72px; }
+    }
+
+    @media (max-width: 768px) {
+      .item-hero-content { padding: 0 28px 60px; }
+      #item-hero { min-height: 80vh; }
+    }
+
+    @media (max-width: 480px) {
+      .item-hero-content { padding: 0 20px 52px; }
+      #item-hero { min-height: 70vh; }
+    }
+
+    /* ── ITEM STORY ───────────────────────────────────────────── */
+    .item-story-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .item-story-meta-block {
+      position: sticky;
+      top: 100px;
+    }
+
+    .item-meta-row {
+      margin-bottom: 32px;
+    }
+
+    .item-meta-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 8px;
+    }
+
+    .item-meta-value {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--black);
+      line-height: 1.5;
+    }
+
+    .item-story-description {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 1024px) {
+      .item-story-grid {
+        grid-template-columns: 1fr;
+        gap: 52px;
+      }
+      .item-story-meta-block { position: static; }
+    }
+
+    /* ── GALLERY ──────────────────────────────────────────────── */
+    #item-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+    }
+
+    #item-gallery .gallery-img {
+      aspect-ratio: 3 / 2;
+      background-size: cover;
+      background-position: center;
+      display: block;
+      transition: transform 0.7s ease;
+      overflow: hidden;
+    }
+
+    #item-gallery .gallery-img:first-child {
+      grid-column: 1 / -1;
+      aspect-ratio: 16 / 7;
+    }
+
+    #item-gallery .gallery-img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 768px) {
+      #item-gallery { grid-template-columns: 1fr; }
+      #item-gallery .gallery-img:first-child {
+        grid-column: auto;
+        aspect-ratio: 3 / 2;
+      }
+    }
+
+    /* ── TESTIMONIAL ─────────────────────────────────────────── */
+    #item-testimonial-wrap {
+      background: var(--black);
+      padding: 120px 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #item-testimonial-wrap::before {
+      content: '\201C';
+      position: absolute;
+      top: 40px; left: 48px;
+      font-family: 'Syne', sans-serif;
+      font-size: 200px;
+      font-weight: 800;
+      color: rgba(201,169,110,0.05);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .item-testimonial-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .item-testimonial-quote {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(20px, 2.6vw, 32px);
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--white);
+      font-style: italic;
+      margin-bottom: 48px;
+    }
+
+    .item-testimonial-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .item-testimonial-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .item-testimonial-author {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+    }
+
+    .item-testimonial-company {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.35);
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 1024px) {
+      #item-testimonial-wrap { padding: 96px 48px; }
+    }
+
+    @media (max-width: 768px) {
+      #item-testimonial-wrap { padding: 80px 28px; }
+      #item-testimonial-wrap::before { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      #item-testimonial-wrap { padding: 64px 20px; }
+    }
+
+    /* ── RELATED PROJECTS ─────────────────────────────────────── */
+    #item-related {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+      margin-top: 56px;
+    }
+
+    @media (max-width: 768px) {
+      #item-related {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ── PORTFOLIO LABEL SLIDE-UP ────────────────────────────── */
+    .portfolio-editorial-label {
+      transform: translateY(14px);
+      opacity: 0;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    }
+
+    .portfolio-editorial:hover .portfolio-editorial-label {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ── FINAL CTA ───────────────────────────────────────────── */
+    .final-cta {
+      background: var(--off-white);
+      padding: 140px 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+      opacity: 0.35;
+    }
+
+    .final-cta-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    .final-cta-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(36px, 4.8vw, 68px);
+      font-weight: 800;
+      color: var(--black);
+      line-height: 1.0;
+      letter-spacing: -0.035em;
+      margin-bottom: 24px;
+    }
+
+    .final-cta-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--gray-600);
+      margin-bottom: 48px;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 1024px) {
+      .final-cta { padding: 112px 48px; }
+    }
+
+    @media (max-width: 768px) {
+      .final-cta { padding: 88px 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .final-cta { padding: 72px 20px; }
+    }
+
+    /* ── CUSTOM CURSOR ──────────────────────────────────────── */
+    @media (hover: hover) and (pointer: fine) {
+      *, *::before, *::after { cursor: none !important; }
+
+      #cursor-ring {
+        position: fixed;
+        top: 0; left: 0;
+        width: 38px; height: 38px;
+        border: 1px solid rgba(201, 169, 110, 0.5);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+        will-change: left, top;
+      }
+
+      #cursor-dot {
+        position: fixed;
+        top: 0; left: 0;
+        width: 4px; height: 4px;
+        background: var(--accent);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        will-change: left, top;
+      }
+
+      #cursor-ring.hovering {
+        width: 58px; height: 58px;
+        border-color: var(--accent);
+        opacity: 0.85;
+      }
+
+      #cursor-ring.hidden,
+      #cursor-dot.hidden { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Principal">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Premium Sensation — Página inicial">
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img" style="height:32px;width:auto;">
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="experiencia.html" data-i18n="nav.experience">A Experiência</a></li>
+      <li><a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a></li>
+      <li><a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="parceiros.html" data-i18n="nav.partners">Parceiros</a></li>
+      <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+    </ul>
+
+    <div class="lang-switcher" aria-label="Selecionar idioma">
+      <button data-lang-btn="pt" class="active">PT</button>
+      <button data-lang-btn="en">EN</button>
+      <button data-lang-btn="fr">FR</button>
+      <button data-lang-btn="es">ES</button>
+    </div>
+
+    <a href="contacto.html" class="nav-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MOBILE MENU
+============================================================ -->
+<div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <a href="experiencia.html" data-i18n="nav.experience">A Experiência</a>
+  <a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a>
+  <a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a>
+  <a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a>
+  <a href="parceiros.html" data-i18n="nav.partners">Parceiros</a>
+  <a href="sobre.html" data-i18n="nav.about">Sobre</a>
+  <a href="contacto.html" class="mobile-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+  <div class="lang-switcher" aria-label="Selecionar idioma">
+    <button data-lang-btn="pt" class="active">PT</button>
+    <button data-lang-btn="en">EN</button>
+    <button data-lang-btn="fr">FR</button>
+    <button data-lang-btn="es">ES</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     ITEM HERO — JS populates #item-hero-img background, #item-title, #item-category
+============================================================ -->
+<header id="item-hero" role="banner" aria-label="Imagem do evento">
+  <!-- background-image set by content.js via id="item-hero-img" -->
+  <div id="item-hero-img" role="img" aria-label="Fotografia do evento"></div>
+  <div id="item-hero-overlay"></div>
+
+  <div class="item-hero-content">
+    <a href="portfolio.html" class="item-hero-back" aria-label="Voltar ao portfólio">← <span data-i18n="item.back">Portfólio</span></a>
+
+    <div class="item-hero-meta">
+      <!-- Populated by content.js -->
+      <span id="item-category" class="item-hero-cat"></span>
+      <span id="item-date" class="item-hero-date"></span>
+    </div>
+
+    <!-- Populated by content.js -->
+    <h1 id="item-title" class="item-hero-title"></h1>
+  </div>
+</header>
+
+<!-- ============================================================
+     STORY / CONTENT SECTION
+     content.js fills: #item-client, #item-description
+============================================================ -->
+<section class="section-wrap--white ps-section" aria-label="Detalhes do projeto">
+  <div class="item-story-grid">
+
+    <!-- Left column: metadata -->
+    <aside class="item-story-meta-block reveal">
+      <div class="item-meta-row">
+        <div class="accent-line"></div>
+        <p class="item-meta-label" data-i18n="item.meta.project">Projeto</p>
+        <p id="item-title-meta" class="item-meta-value">—</p>
+      </div>
+      <div class="item-meta-row">
+        <p class="item-meta-label" data-i18n="item.meta.client">Cliente</p>
+        <p id="item-client" class="item-meta-value">—</p>
+      </div>
+      <div class="item-meta-row">
+        <p class="item-meta-label" data-i18n="item.meta.category">Categoria</p>
+        <p id="item-category-meta" class="item-meta-value">—</p>
+      </div>
+      <div class="item-meta-row">
+        <p class="item-meta-label" data-i18n="item.meta.date">Data</p>
+        <p id="item-date-meta" class="item-meta-value">—</p>
+      </div>
+    </aside>
+
+    <!-- Right column: description -->
+    <div class="reveal reveal-delay-2">
+      <p id="item-description" class="item-story-description"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY — content.js renders images into #item-gallery
+============================================================ -->
+<section class="section-wrap--off" aria-label="Galeria de imagens">
+  <div style="padding: 0 72px;">
+    <div class="reveal" style="margin-bottom: 48px;">
+      <div class="accent-line"></div>
+      <span class="section-eyebrow" data-i18n="item.gallery.label">Galeria</span>
+    </div>
+  </div>
+  <!-- content.js targets id="item-gallery" -->
+  <div id="item-gallery" aria-label="Fotografias do evento">
+    <!-- Populated by content.js -->
+  </div>
+  <style>
+    @media (max-width: 1024px) {
+      section[aria-label="Galeria de imagens"] > div:first-child { padding: 0 48px; }
+    }
+    @media (max-width: 768px) {
+      section[aria-label="Galeria de imagens"] > div:first-child { padding: 0 28px; }
+    }
+    @media (max-width: 480px) {
+      section[aria-label="Galeria de imagens"] > div:first-child { padding: 0 20px; }
+    }
+  </style>
+</section>
+
+<!-- ============================================================
+     TESTIMONIAL — shown only if item has a testimonial
+     content.js fills: #item-testimonial-text, #item-testimonial-author, #item-testimonial-company
+============================================================ -->
+<div id="item-testimonial-wrap" aria-label="Testemunho do cliente">
+  <div class="item-testimonial-inner">
+    <div class="accent-line" style="margin-left:auto;margin-right:auto;"></div>
+    <blockquote>
+      <p id="item-testimonial-text" class="item-testimonial-quote"></p>
+      <div class="item-testimonial-footer">
+        <div class="item-testimonial-rule"></div>
+        <div>
+          <p id="item-testimonial-author" class="item-testimonial-author"></p>
+          <p id="item-testimonial-company" class="item-testimonial-company"></p>
+        </div>
+      </div>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ============================================================
+     RELATED PROJECTS — content.js renders into #item-related
+============================================================ -->
+<section class="section-wrap--dark ps-section--sm" aria-label="Projetos relacionados">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow section-eyebrow--light" data-i18n="item.related.label">Outros Projetos</span>
+    <h2 class="section-headline section-headline--light" data-i18n="item.related.title">Mais experiências extraordinárias.</h2>
+  </div>
+
+  <!-- content.js targets id="item-related" -->
+  <div id="item-related" aria-label="Projetos relacionados">
+    <!-- Populated by content.js -->
+  </div>
+
+  <div style="text-align:center;margin-top:48px;" class="reveal">
+    <a href="portfolio.html" class="text-link text-link--white" data-i18n="item.related.link">Ver Portfólio Completo →</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="final-cta">
+  <div class="reveal">
+    <span class="final-cta-eyebrow">Premium Sensation</span>
+    <h2 class="final-cta-title" data-i18n="cta.headline">Vamos Criar Algo Extraordinário.</h2>
+    <p class="final-cta-subtitle" data-i18n="cta.subheadline">Conte-nos a sua visão. Nós tratamos de todo o resto.</p>
+    <a href="contacto.html" class="btn btn--dark" data-i18n="cta.btn">Solicitar Proposta Privada</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-top">
+    <div>
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img footer-logo" style="height:28px;width:auto;margin-bottom:16px;display:block;">
+      <p class="footer-tagline" data-i18n="footer.tagline">Gestão total de eventos premium, do conceito à execução.</p>
+      <p class="footer-locations">PT · EUA</p>
+    </div>
+    <nav class="footer-col" aria-label="Serviços">
+      <p class="footer-col-title" data-i18n="footer.services">Serviços</p>
+      <ul>
+        <li><a href="experiencia.html" data-i18n="nav.experience">A Experiência</a></li>
+        <li><a href="casamentos.html" data-i18n="nav.weddings">Casamentos Premium</a></li>
+        <li><a href="eventos-corporativos.html" data-i18n="nav.events">Eventos Corporativos</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Empresa">
+      <p class="footer-col-title" data-i18n="footer.company">Empresa</p>
+      <ul>
+        <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="parceiros.html" data-i18n="nav.partners">Parceiros</a></li>
+        <li><a href="contacto.html">Contacto Privado</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <p class="footer-col-title" data-i18n="footer.contact">Contacto</p>
+      <ul>
+        <li><a href="mailto:hello@premiumsensation.com">hello@premiumsensation.com</a></li>
+        <li><a href="#">Lisboa, Portugal</a></li>
+        <li><a href="#">New York, USA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">Premium Sensation is part of <a href="https://sensationgroup.com" target="_blank" rel="noopener">Sensation Group</a> &middot; Built by <a href="https://nocodedistrict.com" target="_blank" rel="noopener">No-Code District</a> &middot; Copyright &copy; 2026 Premium Sensation. All Rights Reserved.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacidade.html" data-i18n="footer.privacy">Privacidade</a>
+      <a href="termos.html" data-i18n="footer.terms">Termos</a>
+      <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+    </nav>
+    <nav class="footer-socials" aria-label="Redes Sociais">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/content.js"></script>
+
+<script>
+(function () {
+
+  /* ── PORTFOLIO ITEM LOADER ─────────────────────────────── */
+  (async function () {
+    const data = await ContentLoader.fetchData('portfolio');
+    if (!data) return;
+
+    await ContentLoader.renderPortfolioItem(data);
+
+    // Mirror some fields to the secondary meta block in the story section
+    var titleEl    = document.getElementById('item-title');
+    var titleMeta  = document.getElementById('item-title-meta');
+    var catEl      = document.getElementById('item-category');
+    var catMeta    = document.getElementById('item-category-meta');
+    var dateEl     = document.getElementById('item-date');
+    var dateMeta   = document.getElementById('item-date-meta');
+
+    if (titleMeta && titleEl) titleMeta.textContent = titleEl.textContent;
+    if (catMeta   && catEl)   catMeta.textContent   = catEl.textContent;
+    if (dateMeta  && dateEl)  dateMeta.textContent  = dateEl.textContent;
+
+    // Show/hide testimonial section based on whether text was populated
+    var testimonialWrap = document.getElementById('item-testimonial-wrap');
+    var testimonialText = document.getElementById('item-testimonial-text');
+    if (testimonialWrap && testimonialText && !testimonialText.textContent.trim()) {
+      testimonialWrap.style.display = 'none';
+    }
+
+    // Trigger hero image transition
+    var heroImg = document.getElementById('item-hero-img');
+    if (heroImg) {
+      requestAnimationFrame(function () { heroImg.classList.add('loaded'); });
+    }
+
+    // Re-run reveal observer on newly rendered related items
+    if (window._revealObserver) {
+      var related = document.getElementById('item-related');
+      if (related) {
+        related.querySelectorAll('.portfolio-editorial').forEach(function (el) {
+          window._revealObserver.observe(el);
+        });
+      }
+    }
+  })();
+
+  /* ── CUSTOM CURSOR ─────────────────────────────────────── */
+  var ring = document.getElementById('cursor-ring');
+  var dot  = document.getElementById('cursor-dot');
+  if (ring && dot && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var rx = 0, ry = 0, mx = 0, my = 0, cursorStarted = false;
+
+    document.addEventListener('mousemove', function (e) {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top  = my + 'px';
+      if (!cursorStarted) {
+        cursorStarted = true;
+        ring.classList.remove('hidden');
+        dot.classList.remove('hidden');
+        loop();
+      }
+    });
+
+    document.addEventListener('mouseleave', function () {
+      ring.classList.add('hidden');
+      dot.classList.add('hidden');
+    });
+
+    document.addEventListener('mouseenter', function () {
+      ring.classList.remove('hidden');
+      dot.classList.remove('hidden');
+    });
+
+    function loop() {
+      rx += (mx - rx) * 0.11;
+      ry += (my - ry) * 0.11;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(loop);
+    }
+
+    document.querySelectorAll('a, button, [role="button"]').forEach(function (el) {
+      el.addEventListener('mouseenter', function () { ring.classList.add('hovering'); });
+      el.addEventListener('mouseleave', function () { ring.classList.remove('hovering'); });
+    });
+
+    ring.classList.add('hidden');
+    dot.classList.add('hidden');
+  }
+
+}());
+</script>
+</body>
+</html>

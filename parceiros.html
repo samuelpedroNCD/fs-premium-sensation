@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parceiros &amp; Destinos — Premium Sensation</title>
+  <meta name="description" content="A rede exclusiva de parceiros e destinos da Premium Sensation. Espaços, fornecedores e parceiros estratégicos curados para os eventos mais exigentes.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://premiumsensation.com/parceiros.html">
+  <link rel="alternate" hreflang="pt" href="https://premiumsensation.com/parceiros.html">
+  <link rel="alternate" hreflang="en" href="https://premiumsensation.com/parceiros.html">
+  <link rel="alternate" hreflang="fr" href="https://premiumsensation.com/parceiros.html">
+  <link rel="alternate" hreflang="es" href="https://premiumsensation.com/parceiros.html">
+  <link rel="alternate" hreflang="x-default" href="https://premiumsensation.com/parceiros.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Parceiros &amp; Destinos — Premium Sensation">
+  <meta property="og:description" content="A rede exclusiva de parceiros e destinos da Premium Sensation.">
+  <meta property="og:image" content="https://premiumsensation.com/assets/img/og-parceiros.jpg">
+  <meta property="og:url" content="https://premiumsensation.com/parceiros.html">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Parceiros &amp; Destinos — Premium Sensation">
+  <meta name="twitter:description" content="A rede exclusiva de parceiros e destinos da Premium Sensation.">
+  <meta name="twitter:image" content="https://premiumsensation.com/assets/img/og-parceiros.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Premium Sensation",
+    "url": "https://premiumsensation.com"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <style>
+    .destinos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 72px; }
+    .destino-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: default;
+    }
+    .destino-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.9s ease;
+    }
+    .destino-card:hover img { transform: scale(1.04); }
+    .destino-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);
+    }
+    .destino-card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 48px;
+    }
+    @media (max-width: 1024px) {
+      .destinos-grid { grid-template-columns: 1fr; }
+      .destino-card { aspect-ratio: 16/7; }
+      .destino-card-content { padding: 28px 32px; }
+    }
+    @media (max-width: 768px) {
+      .destino-card-content { padding: 24px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav" role="navigation" aria-label="Principal">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Premium Sensation — Página inicial">
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img" style="height:32px;width:auto;">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="experiencia.html" data-i18n="nav.experience">A Experiência</a></li>
+      <li><a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a></li>
+      <li><a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="parceiros.html" data-i18n="nav.partners">Parceiros</a></li>
+      <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Selecionar idioma">
+      <button data-lang-btn="pt" class="active">PT</button>
+      <button data-lang-btn="en">EN</button>
+      <button data-lang-btn="fr">FR</button>
+      <button data-lang-btn="es">ES</button>
+    </div>
+    <a href="contacto.html" class="nav-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <a href="experiencia.html" data-i18n="nav.experience">A Experiência</a>
+  <a href="casamentos.html" data-i18n="nav.weddings">Casamentos</a>
+  <a href="eventos-corporativos.html" data-i18n="nav.events">Eventos</a>
+  <a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a>
+  <a href="parceiros.html" data-i18n="nav.partners">Parceiros</a>
+  <a href="sobre.html" data-i18n="nav.about">Sobre</a>
+  <a href="contacto.html" class="mobile-cta" data-i18n="nav.cta">Solicitar Proposta</a>
+  <div class="lang-switcher" aria-label="Selecionar idioma">
+    <button data-lang-btn="pt" class="active">PT</button>
+    <button data-lang-btn="en">EN</button>
+    <button data-lang-btn="fr">FR</button>
+    <button data-lang-btn="es">ES</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE HERO — dark, no image
+============================================================ -->
+<section class="page-hero" aria-label="Parceiros e Destinos">
+  <div class="page-hero-bg" style="background-color:var(--black);background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=90');" role="img" aria-label="Espaço de eventos de luxo"></div>
+  <div class="page-hero-overlay" style="background:rgba(10,10,10,0.72);"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-label">Parceiros &amp; Destinos</p>
+    <h1 class="page-hero-title">Acesso ao que não está<br>disponível ao mercado geral.</h1>
+    <div class="accent-line" style="margin-top:32px;"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO — centered quote
+============================================================ -->
+<section class="section-wrap--white ps-section" aria-labelledby="parceiros-intro-heading">
+  <div class="reveal" style="max-width:800px;margin:0 auto;text-align:center;">
+    <h2 id="parceiros-intro-heading" style="font-family:'Syne',sans-serif;font-size:clamp(22px,2.5vw,38px);font-weight:700;line-height:1.08;letter-spacing:-0.025em;color:var(--black);margin-bottom:32px;">A diferença não está no acesso. Está em quem tem esse acesso.</h2>
+    <p style="font-size:16px;font-weight:300;line-height:1.85;color:var(--gray-600);">Ao longo dos anos, construímos relações privilegiadas com os espaços, fornecedores e parceiros mais exclusivos de Portugal e Nova Iorque. Uma rede que não está disponível ao público geral e que nos permite entregar uma qualidade incomparável em cada projeto.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORIAS DE PARCEIROS — numbered rows
+============================================================ -->
+<section class="section-wrap--off ps-section" aria-labelledby="categorias-heading">
+  <div class="reveal">
+    <div class="accent-line"></div>
+    <span style="font-family:'Inter',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gray-400);margin-bottom:20px;display:block;">A Nossa Rede</span>
+    <h2 id="categorias-heading" style="font-family:'Syne',sans-serif;font-size:clamp(22px,2.6vw,40px);font-weight:700;line-height:1.04;letter-spacing:-0.025em;color:var(--black);">Cada categoria. Curada ao mais alto nível.</h2>
+  </div>
+
+  <div style="margin-top:72px;border-top:1px solid var(--gray-200);">
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">01</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Espaços &amp; Venues</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Palácios históricos, quintas de luxo, rooftops exclusivos e espaços privados em Lisboa, Sintra, Porto, Algarve e Nova Iorque. Cada espaço é pré-selecionado e verificado pela nossa equipa.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">02</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Catering &amp; Fine Dining</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Chefs premiados, equipas de serviço de excelência e propostas gastronómicas personalizadas. Da refeição de degustação ao banquete de gala — tudo ao nível que os seus convidados merecem.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">03</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Fotografia &amp; Vídeo</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Fotógrafos e videógrafos de editorial com um olhar artístico que transforma momentos em imagens eternas. A memória do evento, com a qualidade que merece.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">04</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Floral &amp; Decoração</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Floristas de alta couture e designers de interiores especializados em eventos que criam ambientes únicos e sensorialmente imersivos, do concept à instalação.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">05</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Entretenimento &amp; Atuações</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Artistas, músicos, performers e experiências únicas que transformam cada momento do evento numa memória inesquecível. Acesso exclusivo a talentos de topo.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:56px 1fr 2fr;gap:48px;align-items:start;padding:40px 0;border-bottom:1px solid var(--gray-200);" class="reveal">
+      <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;color:var(--gray-200);padding-top:4px;">06</span>
+      <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--black);line-height:1.2;">Alojamento &amp; Transporte</h3>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--gray-600);">Hotéis de cinco estrelas, transporte privado, helicópteros e serviços de concierge. Cada detalhe logístico tratado com a mesma atenção do evento principal.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     DESTINOS — editorial image cards
+============================================================ -->
+<section class="section-wrap--dark ps-section" aria-labelledby="destinos-heading">
+  <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 0;">
+    <div class="accent-line" style="margin-left:auto;margin-right:auto;"></div>
+    <span style="font-family:'Inter',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;display:block;">Onde Produzimos</span>
+    <h2 id="destinos-heading" style="font-family:'Syne',sans-serif;font-size:clamp(22px,2.6vw,40px);font-weight:700;line-height:1.04;letter-spacing:-0.025em;color:var(--white);">O mundo é o nosso palco.</h2>
+  </div>
+
+  <div class="destinos-grid">
+    <article class="destino-card reveal">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=90" alt="Lisboa, Portugal" loading="lazy">
+      <div class="destino-card-overlay"></div>
+      <div class="destino-card-content">
+        <div class="accent-line"></div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.1;">Lisboa &amp; Portugal</h3>
+        <p style="font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);">Palácios, quintas históricas e espaços exclusivos do Tejo ao Algarve.</p>
+      </div>
+    </article>
+    <article class="destino-card reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=1200&q=90" alt="Nova Iorque, EUA" loading="lazy">
+      <div class="destino-card-overlay"></div>
+      <div class="destino-card-content">
+        <div class="accent-line"></div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.1;">Nova Iorque</h3>
+        <p style="font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);">Penthouses, galerias privadas e lofts exclusivos no coração de Manhattan.</p>
+      </div>
+    </article>
+    <article class="destino-card reveal">
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9357976b82?w=1200&q=90" alt="Paris, França" loading="lazy">
+      <div class="destino-card-overlay"></div>
+      <div class="destino-card-content">
+        <div class="accent-line"></div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.1;">Europa</h3>
+        <p style="font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);">Paris, Côte d'Azur, Amalfi, Ibiza e destinos exclusivos europeus.</p>
+      </div>
+    </article>
+    <article class="destino-card reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=1200&q=90" alt="Destinos internacionais" loading="lazy">
+      <div class="destino-card-overlay"></div>
+      <div class="destino-card-content">
+        <div class="accent-line"></div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.1;">Destinos à Medida</h3>
+        <p style="font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);">Maldivas, Dubai, Tóquio — produzimos onde a sua visão nos leva.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONFIDENCIALIDADE — note
+============================================================ -->
+<section class="section-wrap--white ps-section" style="text-align:center;" aria-labelledby="confidencial-heading">
+  <div class="reveal" style="max-width:640px;margin:0 auto;">
+    <div class="accent-line" style="margin-left:auto;margin-right:auto;"></div>
+    <span style="font-family:'Inter',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gray-400);margin-bottom:20px;display:block;">Nota sobre Confidencialidade</span>
+    <h2 id="confidencial-heading" style="font-family:'Syne',sans-serif;font-size:clamp(20px,2.2vw,34px);font-weight:700;line-height:1.1;letter-spacing:-0.02em;color:var(--black);margin-bottom:24px;">Os nossos parceiros são divulgados apenas aos clientes em consulta privada.</h2>
+    <p style="font-size:16px;font-weight:300;line-height:1.8;color:var(--gray-600);margin-bottom:48px;">Protegemos as relações que construímos. Por isso, não publicamos a lista completa dos nossos parceiros. Em consulta privada, partilhamos recomendações específicas para o seu evento e contexto.</p>
+    <a href="contacto.html" class="btn btn--dark">Solicitar Consulta Privada</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-top">
+    <div>
+      <img src="assets/img/premium_sensation_white0.png" alt="Premium Sensation" class="logo-img footer-logo" style="height:28px;width:auto;margin-bottom:16px;display:block;">
+      <p class="footer-tagline" data-i18n="footer.tagline">Gestão total de eventos premium, do conceito à execução.</p>
+      <p class="footer-locations">PT · EUA</p>
+    </div>
+    <nav class="footer-col" aria-label="Serviços">
+      <p class="footer-col-title" data-i18n="footer.services">Serviços</p>
+      <ul>
+        <li><a href="experiencia.html">A Experiência</a></li>
+        <li><a href="casamentos.html">Casamentos Premium</a></li>
+        <li><a href="eventos-corporativos.html">Eventos Corporativos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Empresa">
+      <p class="footer-col-title" data-i18n="footer.company">Empresa</p>
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="parceiros.html">Parceiros</a></li>
+        <li><a href="contacto.html">Contacto Privado</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <p class="footer-col-title" data-i18n="footer.contact">Contacto</p>
+      <ul>
+        <li><a href="mailto:hello@premiumsensation.com">hello@premiumsensation.com</a></li>
+        <li><a href="#">Lisboa, Portugal</a></li>
+        <li><a href="#">New York, USA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">Premium Sensation is part of <a href="https://sensationgroup.com" target="_blank" rel="noopener">Sensation Group</a> &middot; Built by <a href="https://nocodedistrict.com" target="_blank" rel="noopener">No-Code District</a> &middot; Copyright &copy; 2026 Premium Sensation. All Rights Reserved.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos</a>
+      <a href="cookies.html">Cookies</a>
+    </nav>
+    <nav class="footer-socials" aria-label="Redes Sociais">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/content.js"></script>
+
+</body>
+</html>

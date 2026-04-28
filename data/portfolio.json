@@ -1,0 +1,117 @@
+{
+  "items": [
+    {
+      "id": "gala-anual-lisboa",
+      "category": "corporate",
+      "categoryLabel": { "pt": "Corporativo", "en": "Corporate", "fr": "Corporate", "es": "Corporativo" },
+      "featured": true,
+      "client": "Confidencial",
+      "date": "2024-11",
+      "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&q=90",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1200&q=90",
+        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90",
+        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=90"
+      ],
+      "title": { "pt": "Gala Anual — Lisboa", "en": "Annual Gala — Lisbon", "fr": "Gala Annuel — Lisbonne", "es": "Gala Anual — Lisboa" },
+      "description": {
+        "pt": "Uma noite de gala inesquecível para mais de 300 convidados no coração de Lisboa. Desde a cenografia ao som, cada detalhe foi pensado para criar uma experiência que ficou na memória de todos os presentes.",
+        "en": "An unforgettable gala evening for over 300 guests in the heart of Lisbon. From the set design to the sound, every detail was crafted to create an experience that stayed with all who attended.",
+        "fr": "Une soirée de gala inoubliable pour plus de 300 invités au cœur de Lisbonne. De la scénographie au son, chaque détail a été pensé pour créer une expérience mémorable.",
+        "es": "Una noche de gala inolvidable para más de 300 invitados en el corazón de Lisboa. Desde la escenografía al sonido, cada detalle fue diseñado para crear una experiencia memorable."
+      },
+      "testimonial": {
+        "text": {
+          "pt": "A Premium Sensation superou todas as nossas expectativas. Um trabalho absolutamente impecável do início ao fim.",
+          "en": "Premium Sensation exceeded all our expectations. An absolutely impeccable job from start to finish.",
+          "fr": "Premium Sensation a dépassé toutes nos attentes. Un travail absolument impeccable du début à la fin.",
+          "es": "Premium Sensation superó todas nuestras expectativas. Un trabajo absolutamente impecable de principio a fin."
+        },
+        "author": "Ana Rodrigues",
+        "company": "CEO, Multinacional Lisboa"
+      }
+    },
+    {
+      "id": "casamento-sintra",
+      "category": "wedding",
+      "categoryLabel": { "pt": "Casamento", "en": "Wedding", "fr": "Mariage", "es": "Boda" },
+      "featured": false,
+      "client": "Confidencial",
+      "date": "2024-09",
+      "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=90",
+      "gallery": [
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=90",
+        "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=90",
+        "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=90"
+      ],
+      "title": { "pt": "Casamento — Sintra", "en": "Wedding — Sintra", "fr": "Mariage — Sintra", "es": "Boda — Sintra" },
+      "description": {
+        "pt": "Um casamento de sonho nas colinas de Sintra, com produção integral da Premium Sensation. Decoração, catering, som e iluminação coordenados em perfeita harmonia para o dia mais especial.",
+        "en": "A dream wedding in the hills of Sintra, with full production by Premium Sensation. Decoration, catering, sound and lighting coordinated in perfect harmony for the most special day.",
+        "fr": "Un mariage de rêve dans les collines de Sintra, avec une production complète de Premium Sensation. Décoration, traiteur, son et éclairage coordonnés en parfaite harmonie.",
+        "es": "Una boda de ensueño en las colinas de Sintra, con producción integral de Premium Sensation. Decoración, catering, sonido e iluminación coordinados en perfecta armonía."
+      },
+      "testimonial": {
+        "text": {
+          "pt": "O dia mais feliz das nossas vidas, tornado ainda mais especial pela equipa incrível da Premium Sensation. Cada detalhe foi perfeito.",
+          "en": "The happiest day of our lives, made even more special by the incredible Premium Sensation team. Every detail was perfect.",
+          "fr": "Le jour le plus heureux de notre vie, rendu encore plus spécial par l'incroyable équipe de Premium Sensation.",
+          "es": "El día más feliz de nuestras vidas, hecho aún más especial por el increíble equipo de Premium Sensation."
+        },
+        "author": "Maria & João",
+        "company": "Sintra, Setembro 2024"
+      }
+    },
+    {
+      "id": "celebracao-privada-porto",
+      "category": "private",
+      "categoryLabel": { "pt": "Evento Privado", "en": "Private Event", "fr": "Événement Privé", "es": "Evento Privado" },
+      "featured": false,
+      "client": "Confidencial",
+      "date": "2024-07",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=90",
+      "gallery": [
+        "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=90",
+        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=90"
+      ],
+      "title": { "pt": "Celebração Exclusiva — Porto", "en": "Exclusive Celebration — Porto", "fr": "Célébration Exclusive — Porto", "es": "Celebración Exclusiva — Oporto" },
+      "description": {
+        "pt": "Uma celebração privada de altíssimo nível para um cliente de referência no Porto. Espaço exclusivo, experiência gastronómica curada e entretenimento à medida — confidencialidade total garantida.",
+        "en": "A high-level private celebration for a reference client in Porto. Exclusive venue, curated gastronomic experience and bespoke entertainment — full confidentiality guaranteed.",
+        "fr": "Une célébration privée de haut niveau à Porto. Lieu exclusif, expérience gastronomique curatée et divertissement sur mesure — confidentialité totale garantie.",
+        "es": "Una celebración privada de alto nivel en Oporto. Lugar exclusivo, experiencia gastronómica curada y entretenimiento a medida — confidencialidad total garantizada."
+      },
+      "testimonial": null
+    },
+    {
+      "id": "lancamento-marca-lisboa",
+      "category": "corporate",
+      "categoryLabel": { "pt": "Corporativo", "en": "Corporate", "fr": "Corporate", "es": "Corporativo" },
+      "featured": false,
+      "client": "Confidencial",
+      "date": "2024-03",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90",
+      "gallery": [
+        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=90",
+        "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1200&q=90"
+      ],
+      "title": { "pt": "Lançamento de Marca — Lisboa", "en": "Brand Launch — Lisbon", "fr": "Lancement de Marque — Lisbonne", "es": "Lanzamiento de Marca — Lisboa" },
+      "description": {
+        "pt": "Lançamento de produto premium para uma marca de luxo internacional em Lisboa. Conceito criativo, produção completa e gestão de convidados VIP para 150 pessoas.",
+        "en": "Premium product launch for an international luxury brand in Lisbon. Creative concept, full production and VIP guest management for 150 people.",
+        "fr": "Lancement de produit premium pour une marque de luxe internationale à Lisbonne. Concept créatif, production complète et gestion des invités VIP pour 150 personnes.",
+        "es": "Lanzamiento de producto premium para una marca de lujo internacional en Lisboa. Concepto creativo, producción completa y gestión de invitados VIP para 150 personas."
+      },
+      "testimonial": {
+        "text": {
+          "pt": "Entregaram uma experiência que superou completamente as expectativas dos nossos convidados. Voltaremos a trabalhar juntos.",
+          "en": "They delivered an experience that completely exceeded our guests' expectations. We will work together again.",
+          "fr": "Ils ont livré une expérience qui a complètement dépassé les attentes de nos invités. Nous retravaillerons ensemble.",
+          "es": "Entregaron una experiencia que superó completamente las expectativas de nuestros invitados. Volveremos a trabajar juntos."
+        },
+        "author": "Carlos Mendes",
+        "company": "Director de Marketing, Marca Internacional"
+      }
+    }
+  ]
+}
