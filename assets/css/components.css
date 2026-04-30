@@ -654,60 +654,55 @@
 
 /* Portfolio editorial card */
 .portfolio-editorial {
-  position: relative;
-  overflow: hidden;
   cursor: pointer;
   display: block;
+}
+
+.portfolio-editorial-img-wrap {
+  overflow: hidden; /* clips scale animation to image bounds */
 }
 
 .portfolio-editorial-img {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  transition: transform 0.8s ease;
+  transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: block;
 }
 
 .portfolio-editorial:hover .portfolio-editorial-img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .portfolio-editorial-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(10, 10, 10, 0.75) 0%,
-    rgba(10, 10, 10, 0.1) 50%,
-    transparent 100%
-  );
-  pointer-events: none;
+  display: none; /* removed — label now below image on light background */
 }
 
 .portfolio-editorial-label {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 32px;
-  z-index: 2;
+  padding: 20px 0 0;
 }
 
 .portfolio-editorial-cat {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .portfolio-editorial-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(20px, 2.5vw, 28px);
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-size: clamp(20px, 2.2vw, 30px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  transition: color 0.3s ease;
+}
+
+.portfolio-editorial:hover .portfolio-editorial-title {
+  color: var(--gray-600);
 }

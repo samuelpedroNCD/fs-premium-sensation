@@ -77,8 +77,9 @@ const ContentLoader = {
     container.innerHTML = items.map(item => `
       <article class="portfolio-editorial reveal" data-category="${item.category}">
         <a href="portfolio-item.html?id=${item.id}" class="portfolio-editorial">
-          <img src="${item.image}" alt="${this.t(item.title)}" class="portfolio-editorial-img" loading="lazy">
-          <div class="portfolio-editorial-overlay"></div>
+          <div class="portfolio-editorial-img-wrap">
+            <img src="${item.image}" alt="${this.t(item.title)}" class="portfolio-editorial-img" loading="lazy">
+          </div>
           <div class="portfolio-editorial-label">
             <p class="portfolio-editorial-cat">${this.t(item.categoryLabel) || item.category}</p>
             <h3 class="portfolio-editorial-title">${this.t(item.title)}</h3>
@@ -137,8 +138,9 @@ const ContentLoader = {
     if (relatedEl) {
       relatedEl.innerHTML = related.map(r => `
         <a href="portfolio-item.html?id=${r.id}" class="portfolio-editorial">
-          <img src="${r.image}" alt="${this.t(r.title)}" class="portfolio-editorial-img" loading="lazy">
-          <div class="portfolio-editorial-overlay"></div>
+          <div class="portfolio-editorial-img-wrap">
+            <img src="${r.image}" alt="${this.t(r.title)}" class="portfolio-editorial-img" loading="lazy">
+          </div>
           <div class="portfolio-editorial-label">
             <p class="portfolio-editorial-cat">${this.t(r.categoryLabel) || r.category}</p>
             <h4 class="portfolio-editorial-title">${this.t(r.title)}</h4>

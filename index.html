@@ -430,7 +430,7 @@
     .portfolio-grid-home {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3px;
+      gap: 56px 48px;
       margin-top: 0;
     }
 
@@ -962,17 +962,7 @@
 
     .service-row:hover::after { transform: scaleX(1); }
 
-    /* ── PORTFOLIO LABEL SLIDE-UP OVERRIDE ──────────────────── */
-    .portfolio-editorial-label {
-      transform: translateY(14px);
-      opacity: 0;
-      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-    }
-
-    .portfolio-editorial:hover .portfolio-editorial-label {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    /* label is now below the image — no slide-up needed */
 
     /* ── TESTIMONIALS PROGRESS BAR ──────────────────────────── */
     #testimonials-progress {
@@ -1209,13 +1199,14 @@
   <div class="portfolio-grid-home">
     <article class="reveal">
       <a href="portfolio-item.html?id=gala-anual-lisboa" class="portfolio-editorial">
-        <img
-          src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1800&q=90"
-          alt="Gala Anual — Lisboa"
-          class="portfolio-editorial-img"
-          loading="lazy"
-        >
-        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1800&q=90"
+            alt="Gala Anual — Lisboa"
+            class="portfolio-editorial-img"
+            loading="lazy"
+          >
+        </div>
         <div class="portfolio-editorial-label">
           <p class="portfolio-editorial-cat">Corporativo</p>
           <h3 class="portfolio-editorial-title">Gala Anual — Lisboa</h3>
@@ -1224,13 +1215,14 @@
     </article>
     <article class="reveal reveal-delay-1">
       <a href="portfolio-item.html?id=casamento-sintra" class="portfolio-editorial">
-        <img
-          src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=90"
-          alt="Casamento — Sintra"
-          class="portfolio-editorial-img"
-          loading="lazy"
-        >
-        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=90"
+            alt="Casamento — Sintra"
+            class="portfolio-editorial-img"
+            loading="lazy"
+          >
+        </div>
         <div class="portfolio-editorial-label">
           <p class="portfolio-editorial-cat">Casamento</p>
           <h3 class="portfolio-editorial-title">Casamento — Sintra</h3>
@@ -1239,13 +1231,14 @@
     </article>
     <article class="reveal reveal-delay-2">
       <a href="portfolio-item.html?id=celebracao-privada-porto" class="portfolio-editorial">
-        <img
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90"
-          alt="Celebração Exclusiva — Porto"
-          class="portfolio-editorial-img"
-          loading="lazy"
-        >
-        <div class="portfolio-editorial-overlay"></div>
+        <div class="portfolio-editorial-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90"
+            alt="Celebração Exclusiva — Porto"
+            class="portfolio-editorial-img"
+            loading="lazy"
+          >
+        </div>
         <div class="portfolio-editorial-label">
           <p class="portfolio-editorial-cat">Evento Privado</p>
           <h3 class="portfolio-editorial-title">Celebração Exclusiva — Porto</h3>
