@@ -121,12 +121,12 @@
 
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(40px, 5.8vw, 92px);
-      font-weight: 400;
+      font-size: clamp(44px, 6.5vw, 104px);
+      font-weight: 300;
       font-style: italic;
       color: var(--white);
       line-height: 1.0;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.025em;
       margin-bottom: 36px;
     }
 
@@ -197,17 +197,17 @@
 
     /* ── SHARED SECTION UTILITIES ────────────────────────── */
     .ps-section {
-      padding: 128px 72px;
+      padding: 160px 72px;
     }
 
     .ps-section--sm {
-      padding: 96px 72px;
+      padding: 112px 72px;
     }
 
     .section-header--center {
       text-align: center;
-      max-width: 640px;
-      margin: 0 auto;
+      max-width: 720px;
+      margin: 0 auto 80px;
     }
 
     .section-header--center .accent-line {
@@ -219,58 +219,53 @@
       font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
-      color: var(--gray-400);
-      margin-bottom: 20px;
+      color: var(--accent);
+      margin-bottom: 24px;
       display: block;
-    }
-
-    .section-eyebrow--light {
-      color: rgba(255,255,255,0.3);
     }
 
     .section-headline {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(24px, 2.8vw, 42px);
-      font-weight: 700;
-      line-height: 1.04;
+      font-size: clamp(30px, 3.8vw, 60px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.08;
       letter-spacing: -0.025em;
       color: var(--black);
     }
 
-    .section-headline--light {
-      color: var(--white);
-    }
-
     @media (max-width: 1024px) {
-      .ps-section { padding: 96px 48px; }
-      .ps-section--sm { padding: 72px 48px; }
+      .ps-section { padding: 112px 48px; }
+      .ps-section--sm { padding: 88px 48px; }
     }
 
     @media (max-width: 768px) {
-      .ps-section { padding: 80px 28px; }
-      .ps-section--sm { padding: 64px 28px; }
+      .ps-section { padding: 88px 28px; }
+      .ps-section--sm { padding: 72px 28px; }
     }
 
     @media (max-width: 480px) {
-      .ps-section { padding: 64px 20px; }
-      .ps-section--sm { padding: 56px 20px; }
+      .ps-section { padding: 72px 20px; }
+      .ps-section--sm { padding: 64px 20px; }
     }
 
     /* ── EXPERIENCE SECTION ──────────────────────────────── */
     .experience-grid {
       display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 100px;
-      align-items: center;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 120px;
+      align-items: start;
+      margin-top: 64px;
     }
 
     .experience-quote {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(22px, 2.6vw, 38px);
-      font-weight: 700;
-      line-height: 1.08;
+      font-size: clamp(34px, 4.8vw, 76px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.05;
       letter-spacing: -0.025em;
       color: var(--black);
     }
@@ -278,46 +273,43 @@
     .experience-body {
       font-size: 16px;
       font-weight: 300;
-      line-height: 1.85;
+      line-height: 1.90;
       color: var(--gray-600);
-      margin-bottom: 28px;
+      margin-bottom: 32px;
+      padding-top: 16px;
     }
 
     .experience-body-2 {
       font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
+      font-weight: 400;
+      letter-spacing: 0.04em;
       color: var(--gray-400);
-      line-height: 1.65;
-      border-left: 1px solid var(--accent);
-      padding-left: 20px;
+      line-height: 1.75;
+      border-left: 2px solid var(--accent);
+      padding-left: 24px;
     }
 
     @media (max-width: 1024px) {
       .experience-grid {
         grid-template-columns: 1fr;
-        gap: 52px;
+        gap: 48px;
       }
     }
 
     /* ── SERVICES — numbered rows ────────────────────────── */
     .services-list {
-      margin-top: 72px;
-      border-top: 1px solid var(--gray-200);
+      margin-top: 80px;
+      border-top: 1px solid var(--gray-100);
     }
 
     .service-row {
       display: grid;
       grid-template-columns: 56px 1fr 2fr;
-      gap: 48px;
+      gap: 56px;
       align-items: start;
-      padding: 40px 0;
-      border-bottom: 1px solid var(--gray-200);
+      padding: 52px 0;
+      border-bottom: 1px solid var(--gray-100);
       transition: background 0.3s ease;
-    }
-
-    .service-row:hover {
-      background: transparent;
     }
 
     .service-row:hover .service-row-num {
@@ -326,33 +318,36 @@
 
     .service-row-num {
       font-family: 'Inter', sans-serif;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.18em;
       color: var(--gray-200);
-      padding-top: 4px;
-      transition: color 0.3s ease;
+      padding-top: 8px;
+      transition: color 0.35s ease;
     }
 
     .service-row-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-      font-weight: 700;
+      font-size: clamp(18px, 1.6vw, 24px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--black);
-      line-height: 1.2;
+      line-height: 1.25;
     }
 
     .service-row-desc {
       font-size: 14px;
       font-weight: 300;
-      line-height: 1.8;
-      color: var(--gray-600);
+      line-height: 1.85;
+      color: var(--gray-400);
+      padding-top: 4px;
     }
 
     @media (max-width: 768px) {
       .service-row {
         grid-template-columns: 40px 1fr;
         gap: 24px;
+        padding: 44px 0;
       }
       .service-row-desc {
         grid-column: 2;
@@ -364,7 +359,7 @@
       .service-row {
         grid-template-columns: 1fr;
         gap: 12px;
-        padding: 32px 0;
+        padding: 36px 0;
       }
       .service-row-num { font-size: 10px; }
       .service-row-desc { grid-column: 1; }
@@ -375,58 +370,60 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 0;
-      margin-top: 72px;
+      margin-top: 80px;
       border-top: 1px solid var(--gray-100);
       border-left: 1px solid var(--gray-100);
     }
 
     .client-card {
-      padding: 56px 52px;
+      padding: 64px 56px;
       border-bottom: 1px solid var(--gray-100);
       border-right: 1px solid var(--gray-100);
-      transition: background 0.4s ease;
+      transition: background 0.5s ease;
     }
 
     .client-card:hover {
-      background: var(--off-white);
+      background: var(--ivory);
     }
 
     .client-card-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 48px;
-      font-weight: 700;
+      font-size: clamp(72px, 7vw, 110px);
+      font-weight: 300;
       color: var(--gray-100);
-      line-height: 1;
-      margin-bottom: 24px;
-      letter-spacing: -0.03em;
-      transition: color 0.4s ease;
+      line-height: 0.9;
+      margin-bottom: 28px;
+      letter-spacing: -0.04em;
+      transition: color 0.5s ease;
     }
 
     .client-card:hover .client-card-num {
-      color: var(--accent);
+      color: var(--accent-dim);
     }
 
     .client-card-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 19px;
-      font-weight: 700;
+      font-size: clamp(20px, 1.8vw, 26px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--black);
-      margin-bottom: 14px;
-      line-height: 1.2;
+      margin-bottom: 16px;
+      line-height: 1.15;
     }
 
     .client-card-desc {
       font-size: 14px;
       font-weight: 300;
-      line-height: 1.8;
-      color: var(--gray-600);
+      line-height: 1.85;
+      color: var(--gray-400);
     }
 
     @media (max-width: 768px) {
       .clients-grid {
         grid-template-columns: 1fr;
       }
-      .client-card { padding: 44px 28px; }
+      .client-card { padding: 52px 32px; }
+      .client-card-num { font-size: 80px; }
     }
 
     /* ── PORTFOLIO SECTION ───────────────────────────────── */
@@ -434,7 +431,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3px;
-      margin-top: 64px;
+      margin-top: 0;
     }
 
     .portfolio-grid-home article:first-child {
@@ -462,95 +459,92 @@
       }
     }
 
-    /* ── PROCESS — clean horizontal steps ───────────────── */
+    /* ── PROCESS — architectural vertical list ───────────── */
     .process-track {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      margin-top: 48px;
-      border-top: 1px solid var(--gray-200);
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      border-top: 1px solid var(--gray-100);
     }
 
     .process-step {
-      padding: 40px 32px 40px 32px;
-      border-right: 1px solid var(--gray-200);
-      position: relative;
+      display: grid;
+      grid-template-columns: 64px 1fr 2fr;
+      gap: 64px;
+      align-items: start;
+      padding: 52px 0;
+      border-bottom: 1px solid var(--gray-100);
+      transition: border-color 0.4s;
     }
 
-    .process-step:first-child {
-      padding-left: 0;
-    }
-
-    .process-step:last-child {
-      border-right: none;
-      padding-right: 0;
+    .process-step:hover {
+      border-bottom-color: var(--accent);
     }
 
     .process-step-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       color: var(--accent);
-      margin-bottom: 20px;
+      padding-top: 8px;
       display: block;
     }
 
     .process-step-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: clamp(20px, 1.8vw, 28px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--black);
-      margin-bottom: 12px;
-      line-height: 1.3;
+      line-height: 1.2;
     }
 
     .process-step-desc {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 300;
-      line-height: 1.7;
-      color: var(--gray-600);
+      line-height: 1.85;
+      color: var(--gray-400);
+      padding-top: 6px;
     }
 
     @media (max-width: 1024px) {
-      .process-track {
-        grid-template-columns: 1fr 1fr;
-        border-top: none;
-      }
       .process-step {
-        border-top: 1px solid var(--gray-200);
-        border-right: none;
-        padding: 36px 0 36px 0;
+        grid-template-columns: 48px 1fr;
+        gap: 32px;
       }
-      .process-step:nth-child(odd) {
-        padding-right: 32px;
-        border-right: 1px solid var(--gray-200);
+      .process-step-desc {
+        grid-column: 2;
+        margin-top: 8px;
       }
     }
 
     @media (max-width: 480px) {
-      .process-track {
-        grid-template-columns: 1fr;
-      }
       .process-step {
-        border-right: none !important;
-        padding-right: 0 !important;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 40px 0;
+      }
+      .process-step-desc {
+        grid-column: 1;
+        margin-top: 0;
       }
     }
 
-    /* ── DIFFERENTIALS — ruled list on dark ─────────────── */
+    /* ── DIFFERENTIALS — ruled list ─────────────────────── */
     .differentials-list {
-      margin-top: 72px;
-      border-top: 1px solid rgba(255,255,255,0.07);
+      margin-top: 80px;
+      border-top: 1px solid var(--gray-200);
     }
 
     .differential-row {
       display: grid;
       grid-template-columns: 48px 1.2fr 2fr;
-      gap: 56px;
+      gap: 64px;
       align-items: start;
-      padding: 44px 0;
+      padding: 52px 0;
       border-bottom: 1px solid var(--gray-200);
-      transition: border-color 0.3s;
+      transition: border-color 0.4s;
     }
 
     .differential-row:hover {
@@ -573,8 +567,9 @@
 
     .diff-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 17px;
-      font-weight: 700;
+      font-size: clamp(20px, 1.8vw, 26px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--black);
       line-height: 1.2;
     }
@@ -582,8 +577,8 @@
     .diff-desc {
       font-size: 14px;
       font-weight: 300;
-      line-height: 1.8;
-      color: var(--gray-600);
+      line-height: 1.85;
+      color: var(--gray-400);
     }
 
     @media (max-width: 768px) {
@@ -608,8 +603,8 @@
 
     /* ── TESTIMONIALS — full-screen carousel ─────────────── */
     .testimonials-section {
-      background: var(--ivory);
-      padding: 128px 72px;
+      background: var(--white);
+      padding: 160px 72px;
       position: relative;
       overflow: hidden;
       border-top: 1px solid var(--gray-100);
@@ -619,19 +614,19 @@
     .testimonials-section::before {
       content: '\201C';
       position: absolute;
-      top: 60px;
-      left: 64px;
+      top: 40px;
+      left: 56px;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 240px;
-      font-weight: 700;
-      color: rgba(201,169,110,0.10);
+      font-size: 320px;
+      font-weight: 300;
+      color: var(--accent-dim);
       line-height: 1;
       pointer-events: none;
       user-select: none;
     }
 
     .testimonials-inner {
-      max-width: 880px;
+      max-width: 960px;
       margin: 0 auto;
       position: relative;
     }
@@ -692,12 +687,13 @@
 
     .testimonial-quote {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(20px, 2.4vw, 28px);
-      font-weight: 400;
-      line-height: 1.5;
+      font-size: clamp(24px, 3.2vw, 46px);
+      font-weight: 300;
+      line-height: 1.45;
       color: var(--black);
       font-style: italic;
-      margin-bottom: 40px;
+      margin-bottom: 52px;
+      letter-spacing: -0.01em;
     }
 
     .testimonial-footer {
@@ -762,19 +758,19 @@
     }
 
     @media (max-width: 1024px) {
-      .testimonials-section { padding: 96px 48px; }
-      .testimonials-section::before { font-size: 160px; top: 48px; left: 40px; }
+      .testimonials-section { padding: 120px 48px; }
+      .testimonials-section::before { font-size: 200px; top: 32px; left: 36px; }
     }
 
     @media (max-width: 768px) {
-      .testimonials-section { padding: 80px 28px; }
+      .testimonials-section { padding: 88px 28px; }
       .testimonials-header { flex-direction: column; align-items: flex-start; gap: 32px; margin-bottom: 48px; }
       .testimonials-section::before { display: none; }
-      .testimonials-track { min-height: 320px; }
+      .testimonials-track { min-height: 340px; }
     }
 
     @media (max-width: 480px) {
-      .testimonials-section { padding: 64px 20px; }
+      .testimonials-section { padding: 72px 20px; }
     }
 
     /* ── FINAL CTA ───────────────────────────────────────── */
@@ -1081,10 +1077,12 @@
      A EXPERIÊNCIA PREMIUM
 ============================================================ -->
 <section class="section-wrap--white ps-section">
+  <div style="margin-bottom:56px;" class="reveal">
+    <div class="accent-line"></div>
+    <span class="section-eyebrow" data-i18n="experience.label">A Experiência Premium</span>
+  </div>
   <div class="experience-grid">
     <div class="reveal">
-      <div class="accent-line"></div>
-      <span class="section-eyebrow" data-i18n="experience.label">A Experiência Premium</span>
       <h2 class="experience-quote" data-i18n="experience.title">Não são apenas eventos. São experiências que ficam.</h2>
     </div>
     <div class="reveal reveal-delay-2">
@@ -1095,10 +1093,23 @@
 </section>
 
 <!-- ============================================================
+     EDITORIAL IMAGE BREAK #1
+============================================================ -->
+<div style="width:100%;height:72vh;min-height:480px;overflow:hidden;position:relative;" role="img" aria-label="Evento de luxo Premium Sensation">
+  <img
+    src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1800&q=90"
+    alt=""
+    aria-hidden="true"
+    style="width:100%;height:100%;object-fit:cover;display:block;object-position:center 40%;"
+    loading="lazy"
+  >
+</div>
+
+<!-- ============================================================
      O QUE INCLUI — 6 SERVICES
 ============================================================ -->
 <section class="section-wrap--off ps-section">
-  <div class="reveal">
+  <div class="reveal" style="max-width:560px;">
     <div class="accent-line"></div>
     <span class="section-eyebrow" data-i18n="services.label">O Que Inclui</span>
     <h2 class="section-headline" data-i18n="services.title">Gestão integral, do conceito à execução.</h2>
@@ -1173,11 +1184,24 @@
 </section>
 
 <!-- ============================================================
+     EDITORIAL IMAGE BREAK #2
+============================================================ -->
+<div style="width:100%;height:56vh;min-height:360px;overflow:hidden;position:relative;" role="img" aria-label="Casamento de luxo Premium Sensation">
+  <img
+    src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1800&q=90"
+    alt=""
+    aria-hidden="true"
+    style="width:100%;height:100%;object-fit:cover;display:block;object-position:center 50%;"
+    loading="lazy"
+  >
+</div>
+
+<!-- ============================================================
      EVENTOS SELECIONADOS — PORTFOLIO PREVIEWS
 ============================================================ -->
 <section class="section-wrap--white ps-section">
-  <div class="reveal">
-    <div class="accent-line"></div>
+  <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 72px;">
+    <div class="accent-line" style="margin:0 auto 24px;"></div>
     <span class="section-eyebrow" data-i18n="portfolio.label">Eventos Selecionados</span>
     <h2 class="section-headline" data-i18n="portfolio.title">Um portfólio de experiências extraordinárias.</h2>
   </div>
@@ -1239,8 +1263,8 @@
      O NOSSO PROCESSO — 5 STEPS
 ============================================================ -->
 <section class="section-wrap--off ps-section--sm">
-  <div class="reveal">
-    <div class="accent-line"></div>
+  <div class="reveal" style="text-align:center;max-width:540px;margin:0 auto;">
+    <div class="accent-line" style="margin:0 auto 24px;"></div>
     <span class="section-eyebrow" data-i18n="process.label">Como Trabalhamos</span>
     <h2 class="section-headline" data-i18n="process.title">O Nosso Processo</h2>
   </div>

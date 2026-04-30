@@ -52,11 +52,12 @@
 
 .page-hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(22px, 3vw, 46px);
-  font-weight: 700;
+  font-size: clamp(30px, 4.5vw, 72px);
+  font-weight: 300;
+  font-style: italic;
   color: var(--white);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
 }
 
 .page-hero-desc {
@@ -99,7 +100,7 @@
    SECTION WRAPPER
 ============================================================ */
 .section-wrap {
-  padding: 120px 48px;
+  padding: 140px 48px;
 }
 
 .section-wrap--dark {
@@ -123,8 +124,8 @@
 }
 
 /* ── Premium Sensation section padding ── */
-.ps-section      { padding: 128px 72px; }
-.ps-section--sm  { padding: 96px 72px; }
+.ps-section      { padding: 160px 72px; }
+.ps-section--sm  { padding: 112px 72px; }
 
 .section-header--center {
   text-align: center;
@@ -187,10 +188,11 @@
 
 .section-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(24px, 3vw, 42px);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  font-size: clamp(30px, 3.8vw, 60px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
 }
 
 .section-title--dark {
@@ -198,7 +200,8 @@
 }
 
 .section-title--lg {
-  font-size: clamp(28px, 3.8vw, 54px);
+  font-size: clamp(38px, 5vw, 80px);
+  line-height: 1.04;
 }
 
 /* ============================================================
@@ -561,8 +564,8 @@
     padding: 60px 40px;
   }
 
-  .ps-section     { padding: 96px 48px; }
-  .ps-section--sm { padding: 72px 48px; }
+  .ps-section     { padding: 112px 48px; }
+  .ps-section--sm { padding: 88px 48px; }
 }
 
 /* ============================================================
@@ -570,11 +573,11 @@
 ============================================================ */
 @media (max-width: 768px) {
   .section-wrap {
-    padding: 72px 24px;
+    padding: 88px 24px;
   }
 
-  .ps-section     { padding: 80px 28px; }
-  .ps-section--sm { padding: 64px 28px; }
+  .ps-section     { padding: 88px 28px; }
+  .ps-section--sm { padding: 72px 28px; }
 
   .page-hero {
     padding: 120px 24px 60px;
