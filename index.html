@@ -544,16 +544,16 @@
       gap: 56px;
       align-items: start;
       padding: 44px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid var(--gray-200);
       transition: border-color 0.3s;
     }
 
     .differential-row:hover {
-      border-bottom-color: rgba(255,255,255,0.14);
+      border-bottom-color: var(--accent);
     }
 
     .differential-row:hover .diff-num {
-      color: var(--white);
+      color: var(--black);
     }
 
     .diff-num {
@@ -570,7 +570,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 17px;
       font-weight: 700;
-      color: var(--white);
+      color: var(--black);
       line-height: 1.2;
     }
 
@@ -578,7 +578,7 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 1.8;
-      color: rgba(255,255,255,0.4);
+      color: var(--gray-600);
     }
 
     @media (max-width: 768px) {
@@ -603,10 +603,12 @@
 
     /* ── TESTIMONIALS — full-screen carousel ─────────────── */
     .testimonials-section {
-      background: var(--black);
+      background: var(--ivory);
       padding: 128px 72px;
       position: relative;
       overflow: hidden;
+      border-top: 1px solid var(--gray-100);
+      border-bottom: 1px solid var(--gray-100);
     }
 
     .testimonials-section::before {
@@ -617,7 +619,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 240px;
       font-weight: 800;
-      color: rgba(201,169,110,0.06);
+      color: rgba(201,169,110,0.10);
       line-height: 1;
       pointer-events: none;
       user-select: none;
@@ -645,9 +647,9 @@
     .testimonials-btn {
       width: 44px;
       height: 44px;
-      border: 1px solid rgba(255,255,255,0.15);
+      border: 1px solid var(--gray-200);
       background: none;
-      color: rgba(255,255,255,0.5);
+      color: var(--gray-400);
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -688,7 +690,7 @@
       font-size: clamp(20px, 2.4vw, 28px);
       font-weight: 400;
       line-height: 1.5;
-      color: var(--white);
+      color: var(--black);
       font-style: italic;
       margin-bottom: 40px;
     }
@@ -711,14 +713,14 @@
       font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.06em;
-      color: var(--white);
+      color: var(--black);
     }
 
     .testimonial-company {
       font-family: 'Inter', sans-serif;
       font-size: 12px;
       font-weight: 300;
-      color: rgba(255,255,255,0.35);
+      color: var(--gray-400);
       margin-top: 3px;
       letter-spacing: 0.04em;
     }
@@ -732,7 +734,7 @@
     .testimonials-dot {
       width: 20px;
       height: 1px;
-      background: rgba(255,255,255,0.2);
+      background: var(--gray-200);
       cursor: pointer;
       transition: background 0.3s, width 0.3s;
       border: none;
@@ -772,7 +774,7 @@
 
     /* ── FINAL CTA ───────────────────────────────────────── */
     .final-cta {
-      background: var(--off-white);
+      background: var(--black);
       padding: 140px 72px;
       text-align: center;
       position: relative;
@@ -787,7 +789,7 @@
       right: 0;
       height: 1px;
       background: linear-gradient(to right, transparent, var(--accent), transparent);
-      opacity: 0.35;
+      opacity: 0.55;
     }
 
     .final-cta-eyebrow {
@@ -805,7 +807,7 @@
       font-family: 'Syne', sans-serif;
       font-size: clamp(24px, 3vw, 44px);
       font-weight: 800;
-      color: var(--black);
+      color: var(--white);
       line-height: 0.98;
       letter-spacing: -0.04em;
       margin-bottom: 28px;
@@ -815,7 +817,7 @@
       font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 300;
-      color: var(--gray-600);
+      color: rgba(255,255,255,0.45);
       margin-bottom: 52px;
       line-height: 1.65;
       letter-spacing: 0.01em;
@@ -1160,11 +1162,11 @@
 <!-- ============================================================
      EVENTOS SELECIONADOS — PORTFOLIO PREVIEWS
 ============================================================ -->
-<section class="section-wrap--dark ps-section">
+<section class="section-wrap--white ps-section">
   <div class="reveal">
     <div class="accent-line"></div>
-    <span class="section-eyebrow section-eyebrow--light" data-i18n="portfolio.label">Eventos Selecionados</span>
-    <h2 class="section-headline section-headline--light" data-i18n="portfolio.title">Um portfólio de experiências extraordinárias.</h2>
+    <span class="section-eyebrow" data-i18n="portfolio.label">Eventos Selecionados</span>
+    <h2 class="section-headline" data-i18n="portfolio.title">Um portfólio de experiências extraordinárias.</h2>
   </div>
 
   <div class="portfolio-grid-home">
@@ -1216,7 +1218,7 @@
   </div>
 
   <div class="portfolio-footer reveal">
-    <a href="portfolio.html" class="text-link text-link--white" data-i18n="portfolio.link">Ver Portfólio Completo →</a>
+    <a href="portfolio.html" class="text-link" data-i18n="portfolio.link">Ver Portfólio Completo →</a>
   </div>
 </section>
 
@@ -1262,11 +1264,11 @@
 <!-- ============================================================
      DIFERENCIAIS
 ============================================================ -->
-<section class="section-wrap--dark ps-section">
+<section class="section-wrap--cream ps-section">
   <div class="reveal">
     <div class="accent-line"></div>
-    <span class="section-eyebrow section-eyebrow--light" data-i18n="differentials.label">Diferenciais</span>
-    <h2 class="section-headline section-headline--light" data-i18n="differentials.title">O que nos distingue.</h2>
+    <span class="section-eyebrow" data-i18n="differentials.label">Diferenciais</span>
+    <h2 class="section-headline" data-i18n="differentials.title">O que nos distingue.</h2>
   </div>
 
   <div class="differentials-list">
@@ -1307,8 +1309,8 @@
     <div class="testimonials-header reveal">
       <div>
         <div class="accent-line"></div>
-        <span class="section-eyebrow section-eyebrow--light" data-i18n="testimonials.label">Testemunhos</span>
-        <h2 class="section-headline section-headline--light" data-i18n="testimonials.title">O que dizem os nossos clientes.</h2>
+        <span class="section-eyebrow" data-i18n="testimonials.label">Testemunhos</span>
+        <h2 class="section-headline" data-i18n="testimonials.title">O que dizem os nossos clientes.</h2>
       </div>
       <div class="testimonials-nav" aria-label="Navegar testemunhos">
         <button class="testimonials-btn" id="t-prev" aria-label="Testemunho anterior">←</button>
@@ -1367,7 +1369,7 @@
     <span class="final-cta-eyebrow">Premium Sensation</span>
     <h2 class="final-cta-title" data-i18n="cta.headline">Vamos Criar Algo Extraordinário.</h2>
     <p class="final-cta-subtitle" data-i18n="cta.subheadline">Conte-nos a sua visão. Nós tratamos de todo o resto.</p>
-    <a href="contacto.html" class="btn btn--dark" data-i18n="cta.btn">Solicitar Proposta Privada</a>
+    <a href="contacto.html" class="btn btn--outline-white" data-i18n="cta.btn">Solicitar Proposta Privada</a>
   </div>
 </section>
 
