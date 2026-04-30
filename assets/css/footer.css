@@ -26,10 +26,10 @@
    FOOTER LOGO
 ============================================================ */
 .footer-logo {
-  height: 28px;
+  height: 42px;
   width: auto;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* ============================================================
@@ -81,7 +81,7 @@
 }
 
 .footer-col ul a:hover {
-  color: var(--white);
+  color: var(--accent);
 }
 
 /* ============================================================

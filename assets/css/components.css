@@ -19,7 +19,7 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.38;
 }
 
 .page-hero-overlay {
@@ -106,6 +106,14 @@
 
 .section-wrap--off {
   background: var(--off-white);
+}
+
+.section-wrap--cream {
+  background: var(--cream);
+}
+
+.section-wrap--ivory {
+  background: var(--ivory);
 }
 
 .section-wrap--white {
@@ -600,10 +608,11 @@
 
 /* Accent line — marks sections with brand colour */
 .accent-line {
-  width: 40px;
-  height: 1px;
+  width: 48px;
+  height: 2px;
   background: var(--accent);
   margin-bottom: 32px;
+  opacity: 0.85;
 }
 
 /* Gold highlight for key words */

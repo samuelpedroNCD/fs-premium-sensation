@@ -21,8 +21,10 @@
 }
 
 .nav.scrolled {
-  background: var(--black);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: rgba(26, 20, 14, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: rgba(201, 169, 110, 0.15);
 }
 
 .nav-inner {
@@ -42,7 +44,7 @@
 }
 
 .nav-logo .logo-img {
-  height: 32px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -81,17 +83,17 @@
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--accent);
+  border: 1px solid rgba(201, 169, 110, 0.55);
   padding: 10px 20px;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
   cursor: pointer;
 }
 
 .nav-cta:hover {
-  background: var(--white);
+  background: var(--accent);
   color: var(--black);
-  border-color: var(--white);
+  border-color: var(--accent);
 }
 
 /* ============================================================
@@ -229,7 +231,7 @@
 ============================================================ */
 @media (max-width: 768px) {
   :root {
-    --nav-height: 60px;
+    --nav-height: 64px;
   }
 
   .nav {
