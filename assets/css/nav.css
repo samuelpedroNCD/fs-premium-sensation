@@ -186,7 +186,7 @@
 }
 
 .nav-mobile-menu a {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(28px, 6vw, 40px);
   font-weight: 700;
   color: var(--white);
