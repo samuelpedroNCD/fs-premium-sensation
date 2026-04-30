@@ -53,10 +53,10 @@
       position: relative;
       min-height: 100svh;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
+      justify-content: flex-start;
       overflow: hidden;
-      background: var(--black);
+      background: var(--ivory);
     }
 
     #hero-bg {
@@ -64,25 +64,26 @@
       inset: 0;
       background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1800&q=90');
       background-size: cover;
-      background-position: center;
-      transform: scale(1.06);
-      transition: transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.4s ease;
+      background-position: center 30%;
+      transform: scale(1.05);
+      transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.6s ease;
       opacity: 0;
     }
 
     #hero-bg.loaded {
       transform: scale(1);
-      opacity: 0.62;
+      opacity: 0.90;
     }
 
     #hero-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(
-        160deg,
-        rgba(10, 10, 10, 0.18) 0%,
-        rgba(10, 10, 10, 0.52) 50%,
-        rgba(10, 10, 10, 0.82) 100%
+        to top,
+        rgba(26, 20, 14, 0.82) 0%,
+        rgba(26, 20, 14, 0.30) 30%,
+        rgba(26, 20, 14, 0.05) 60%,
+        transparent 100%
       );
     }
 
@@ -102,9 +103,10 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      text-align: center;
-      padding: 0 48px;
-      max-width: 860px;
+      text-align: left;
+      padding: 0 72px 88px;
+      max-width: 880px;
+      width: 100%;
     }
 
     .hero-geo {
@@ -113,37 +115,36 @@
       font-weight: 500;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.35);
-      margin-bottom: 48px;
+      color: rgba(255, 255, 255, 0.42);
+      margin-bottom: 40px;
     }
 
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(32px, 4.8vw, 72px);
-      font-weight: 700;
+      font-size: clamp(40px, 5.8vw, 92px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--white);
-      line-height: 0.97;
-      letter-spacing: -0.03em;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
       margin-bottom: 36px;
     }
 
     .hero-accent-line {
-      width: 40px;
+      width: 48px;
       height: 1px;
       background: var(--accent);
-      margin: 0 auto 32px;
+      margin: 0 0 32px;
     }
 
     .hero-subtitle {
       font-family: 'Inter', sans-serif;
-      font-size: clamp(14px, 1.4vw, 17px);
+      font-size: clamp(13px, 1.3vw, 16px);
       font-weight: 300;
       color: rgba(255, 255, 255, 0.55);
-      line-height: 1.75;
+      line-height: 1.80;
       margin-bottom: 52px;
-      max-width: 460px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 420px;
       letter-spacing: 0.01em;
     }
 
@@ -180,13 +181,17 @@
       50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
     }
 
+    @media (max-width: 1024px) {
+      .hero-content { padding: 0 48px 72px; }
+    }
+
     @media (max-width: 768px) {
-      .hero-content { padding: 0 32px; }
-      .hero-title { letter-spacing: -0.02em; }
+      .hero-content { padding: 0 32px 64px; }
+      .hero-title { letter-spacing: -0.015em; }
     }
 
     @media (max-width: 480px) {
-      .hero-content { padding: 0 24px; }
+      .hero-content { padding: 0 24px 56px; }
       .hero-scroll { display: none; }
     }
 
@@ -774,65 +779,73 @@
 
     /* ── FINAL CTA ───────────────────────────────────────── */
     .final-cta {
-      background: var(--black);
-      padding: 140px 72px;
+      background: var(--ivory);
+      padding: 160px 72px;
       text-align: center;
       position: relative;
-      overflow: hidden;
+      border-top: 1px solid var(--gray-100);
     }
 
     .final-cta::before {
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
       height: 1px;
       background: linear-gradient(to right, transparent, var(--accent), transparent);
-      opacity: 0.55;
+      opacity: 0.7;
     }
 
     .final-cta-eyebrow {
       font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.24em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 32px;
+      margin-bottom: 40px;
       display: block;
     }
 
     .final-cta-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(24px, 3vw, 44px);
-      font-weight: 700;
-      color: var(--white);
-      line-height: 0.98;
-      letter-spacing: -0.04em;
-      margin-bottom: 28px;
+      font-size: clamp(38px, 5.2vw, 82px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--black);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      margin-bottom: 32px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .final-cta-subtitle {
       font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 300;
-      color: rgba(255,255,255,0.45);
-      margin-bottom: 52px;
-      line-height: 1.65;
+      color: var(--gray-600);
+      margin-bottom: 56px;
+      line-height: 1.70;
       letter-spacing: 0.01em;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 1024px) {
-      .final-cta { padding: 112px 48px; }
+      .final-cta { padding: 120px 48px; }
     }
 
     @media (max-width: 768px) {
-      .final-cta { padding: 88px 28px; }
+      .final-cta { padding: 96px 28px; }
     }
 
     @media (max-width: 480px) {
-      .final-cta { padding: 72px 20px; }
+      .final-cta { padding: 80px 20px; }
     }
 
     /* ── CUSTOM CURSOR ──────────────────────────────────────── */
@@ -1055,7 +1068,7 @@
     <h1 class="hero-title" data-i18n="hero.headline">Criamos Experiências Extraordinárias.</h1>
     <div class="hero-accent-line"></div>
     <p class="hero-subtitle" data-i18n="hero.subheadline">Organização e produção de eventos premium, do conceito à execução.</p>
-    <a href="contacto.html" class="btn btn--outline-white" data-i18n="hero.cta">Solicitar Proposta Privada</a>
+    <a href="contacto.html" class="btn" data-i18n="hero.cta">Solicitar Proposta Privada</a>
   </div>
 
   <div class="hero-scroll" aria-hidden="true">
@@ -1368,8 +1381,9 @@
   <div class="reveal">
     <span class="final-cta-eyebrow">Premium Sensation</span>
     <h2 class="final-cta-title" data-i18n="cta.headline">Vamos Criar Algo Extraordinário.</h2>
+    <div class="accent-line" style="margin: 0 auto 40px;"></div>
     <p class="final-cta-subtitle" data-i18n="cta.subheadline">Conte-nos a sua visão. Nós tratamos de todo o resto.</p>
-    <a href="contacto.html" class="btn btn--outline-white" data-i18n="cta.btn">Solicitar Proposta Privada</a>
+    <a href="contacto.html" class="btn" data-i18n="cta.btn">Solicitar Proposta Privada</a>
   </div>
 </section>
 

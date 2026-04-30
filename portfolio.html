@@ -133,41 +133,48 @@
 
     /* ── FINAL CTA ───────────────────────────────────────────── */
     .final-cta {
-      background: var(--off-white);
-      padding: 140px 72px;
+      background: var(--ivory);
+      padding: 160px 72px;
       text-align: center;
       position: relative;
-      overflow: hidden;
+      border-top: 1px solid var(--gray-100);
     }
 
     .final-cta::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
       height: 1px;
       background: linear-gradient(to right, transparent, var(--accent), transparent);
-      opacity: 0.35;
+      opacity: 0.7;
     }
 
     .final-cta-eyebrow {
       font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.24em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 32px;
+      margin-bottom: 40px;
       display: block;
     }
 
     .final-cta-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(36px, 4.8vw, 68px);
-      font-weight: 700;
+      font-size: clamp(38px, 5.2vw, 82px);
+      font-weight: 400;
+      font-style: italic;
       color: var(--black);
-      line-height: 1.0;
-      letter-spacing: -0.035em;
-      margin-bottom: 24px;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      margin-bottom: 32px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .final-cta-subtitle {
@@ -175,9 +182,12 @@
       font-size: 15px;
       font-weight: 300;
       color: var(--gray-600);
-      margin-bottom: 48px;
-      line-height: 1.65;
+      margin-bottom: 56px;
+      line-height: 1.70;
       letter-spacing: 0.01em;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 1024px) {
@@ -325,7 +335,7 @@
     <span class="final-cta-eyebrow">Premium Sensation</span>
     <h2 class="final-cta-title" data-i18n="portfolio.cta.title">Cada projeto começa com uma conversa.</h2>
     <p class="final-cta-subtitle" data-i18n="portfolio.cta.subtitle">Conte-nos a sua visão. Criamos algo que ninguém vai esquecer.</p>
-    <a href="contacto.html" class="btn btn--dark" data-i18n="portfolio.cta.btn">Solicitar Consulta Privada</a>
+    <a href="contacto.html" class="btn" data-i18n="portfolio.cta.btn">Solicitar Consulta Privada</a>
   </div>
 </section>
 

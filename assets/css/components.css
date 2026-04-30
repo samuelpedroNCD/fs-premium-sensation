@@ -9,8 +9,8 @@
 ============================================================ */
 .page-hero {
   position: relative;
-  padding: 160px 48px 88px;
-  background: var(--black);
+  padding: 180px 48px 100px;
+  background: var(--ivory);
   overflow: hidden;
 }
 
@@ -19,16 +19,18 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.38;
+  opacity: 0.78;
+  transition: opacity 1.2s ease;
 }
 
 .page-hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.5) 0%,
-    rgba(10, 10, 10, 0.85) 100%
+    to top,
+    rgba(26, 20, 14, 0.62) 0%,
+    rgba(26, 20, 14, 0.08) 45%,
+    transparent 72%
   );
 }
 
@@ -42,9 +44,9 @@
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 20px;
 }
 
@@ -238,17 +240,23 @@
   align-items: center;
   gap: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 14px 28px;
+  padding: 16px 36px;
   cursor: pointer;
-  transition: gap 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(201, 169, 110, 0.55);
+  transition: gap 0.25s, background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .btn:hover {
   gap: 16px;
+  background: var(--accent);
+  color: var(--black);
+  border-color: var(--accent);
 }
 
 .btn--dark {
@@ -269,7 +277,20 @@
 }
 
 .btn--outline:hover {
-  border-color: var(--black);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Gold solid variant ── */
+.btn--gold {
+  background: var(--accent);
+  color: var(--black);
+  border-color: var(--accent);
+}
+
+.btn--gold:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
 }
 
 .btn--outline-white {
